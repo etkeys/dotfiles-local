@@ -6,3 +6,7 @@
 	path = sublib/dotbot-plugins/sudo
 	url = https://github.com/DrDynamic/dotbot-sudo.git
     ignore = dirty
+[submodule "i3blocklets"]
+	path = sublib/i3blocklets
+	url = https://github.com/etkeys/i3blocks-blocklets.git
+    ignore = dirty

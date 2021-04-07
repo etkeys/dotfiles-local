@@ -8,7 +8,9 @@
         stdout: true
 
 
-- create: ['~/repos']
+- create: 
+    - ~/bin/i3blockets
+    - ~/repos
 
 
 - link:
@@ -23,3 +25,9 @@
         ignore-missing: true
         if: '[ ! -z $VMDIR ]'
 
+
+- shell:
+    - description: Install i3blocks blocklets
+      command: >
+          cd sublib/i3blocklets &&
+          ./deploy
