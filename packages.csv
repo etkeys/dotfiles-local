@@ -1,0 +1,60 @@
+provider,package,tags,additional_options,comments
+apt,acpi,any,,
+apt,arandr,any,,
+apt,arp-scan,any,,
+snap,audacity,any,,
+apt,autoconf,any,,
+apt,build-essential,any,,
+apt,bridge-utils,any,,Utilities for configuring the Linux Ethernet bridge
+apt,cheese,any,,
+snap,chromium,any,,
+snap,code,any,--classic,
+apt,coolkey,any,,support for reading CAC cards
+snap,discord,any,,
+apt,dconf-editor,any,,
+apt,dotnet-sdk-3.1,any,,
+apt,feh,any,,For controlling background wallpaper. Might not be needed with relgolith
+apt,ffmpeg,any,,
+apt,flameshot,any,,
+apt,handbrake,any,,
+snap,hugo,any,--channle=extended/stable,
+apt,hwinfo,any,,
+pip,i3ipc,any,,Python lib to control i3wm and sway
+apt,kdeconnect,any,,
+apt,landscape-common,any,,Display system info when starting a terminal emulator
+apt,libdvdcss2,any,,
+apt,libdvdcss-dev,any,,
+apt,libdvd-pkg,any,,
+snap,libreoffice,any,,
+apt,libvirt-clients,any,,Programs for libvirt (e.g. virsh)
+apt,libvirt-daemon-system,any,,libvirt daemon
+apt,lxappearance,any,,Will be need if creating i3 desktop from ground up.
+apt,lynx,any,,Helps with markdown rendering.
+apt,nfs-common,any,,
+apt,numlockx,any,,
+apt,obs-studio,any,,
+apt,packages-microsoft-prod,any,,
+apt,pandoc,any,,Helps with markdown rendering.
+apt,pavucontrol,any;jet,,For jet need to install this after alsa.
+apt,pcscd,any,,Helps with reading CAC cards.
+apt,pcsc-tools,any,,Helps with reading CAC cards.
+snap,powershell,any,--classic,
+apt,python3-venv,any,,
+snap,qemu-virgil,any,--edge,
+apt,ranger,any,,
+apt,redshift,any,,
+apt,redshift-gtk,any,,
+apt,regolith-desktop-minimal,any,,
+apt,rxvt-unicode,any,,
+apt,sqlite3,any,,
+apt,sqlite3-doc,any,,
+apt,sqlite3-pcre,any,,
+apt,ssh-askpass,any,,
+apt,steam,any,,
+apt,thunderbird,any,,
+apt,transmission,any,,
+snap,uno-calculator,any,--channel=beta,
+apt,vim-gtk3,any,,
+apt,xdotool,any,,
+apt,yad,any,,
+pip,youtube-dl,any,,

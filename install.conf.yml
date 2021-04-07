@@ -13,6 +13,48 @@
     - ~/repos
 
 
+- sudo:
+    - shell:
+        - description: Add Microsoft .NET Core package signing key
+          command: >
+              cd /tmp && 
+              wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release --short --release)/packages-microsoft-prod.deb" &&
+              dpkg -i packages-microsoft-prod.deb
+
+        
+        - description: Add repo for steam
+          command: yes | add-apt-repository multiverse
+
+
+        - description: Add ppa for Regolith Desktop
+          command: yes | add-apt-repository ppa:regolith-linux/release
+
+        
+        - description: Perform apt cache update
+          command: apt-get update
+
+
+          # install-packages.py should have a link in /root/bin
+        - description: Install packages
+          command: install-packages.py --tags "any"
+
+
+        - description: Configure qemu-virgil
+          command: >
+              (command -v snap && snap list qemu-virgil) >/dev/null 2>&1 &&
+              (
+                  snap connect qemu-virgil:audio-record &&
+                  snap connect qemu-virgil:kvm &&
+                  snap connect qemu-virgil:raw-usb &&
+                  snap connect qemu-virgil:removable-media
+              ) ||
+              echo "qemu-virgil not installed... skipping."
+
+
+        - description: Add installing user to kvm group
+          command: adduser ${SUDO_USER} kvm
+
+
 - link:
     ~/:
         path: home/.*
