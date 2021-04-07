@@ -8,6 +8,9 @@
         stdout: true
 
 
+- create: ['~/repos']
+
+
 - link:
     ~/:
         path: home/.*
