@@ -1,0 +1,2 @@
+#!/bin/sh
+'feh' '--bg-scale' '/home/erik/Pictures/Wallpapers/randombg-dotnet/current' 

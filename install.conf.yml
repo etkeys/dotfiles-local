@@ -7,3 +7,16 @@
         stderr: true
         stdout: true
 
+
+- link:
+    ~/:
+        path: home/.*
+        glob: true
+    ~/toby:
+        path: /nfs/home/$USER
+        ignore-missing: true
+    ~/VirtualBoxVMs:
+        path: $VMDIR/$USER/virtualbox
+        ignore-missing: true
+        if: '[ ! -z $VMDIR ]'
+

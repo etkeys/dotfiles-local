@@ -1,0 +1,31 @@
+!xterm*faceName: Monospace Bold 
+!xterm*faceSize: 13
+
+!URxvt.background: [70]#232729
+URxvt.background: rgba:2300/2700/2900/d300
+URxvt.cursorColor: #cb4b16
+URxvt.depth: 32
+URxvt.font: xft:monospace:bold:size=12
+URxvt.foreground: #eeeeec
+URxvt.meta8: true
+URxvt.scrollBar: false
+
+!*.alpha: 200
+!*.background:#232729
+*.color0:#232729
+!*.color0:#ffffff
+*.color1:#cc241d
+*.color2:#4e9a06
+*.color3:#c4a000
+*.color4:#3465a4
+*.color5:#75507b
+*.color6:#06989a
+*.color7:#b9b9b9
+*.color8:#555753
+*.color9:#c07f7f
+*.color10:#8ae234
+*.color11:#fce94f
+*.color12:#729fcf
+*.color13:#ad7fa8
+*.color14:#34e2e2
+*.color15:#eeeeec

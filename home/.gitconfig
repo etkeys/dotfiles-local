@@ -1,0 +1,42 @@
+[user]
+	name = E. Keys
+	email = e.t.keys@gmail.com
+[alias]
+    a = add
+    ai = add --interactive
+	au = add -u
+    br = branch
+	bra = branch -a
+	brd = branch -D
+    brv = branch -vv
+	co = checkout
+	cob = checkout -b
+	com = commit
+	coma = commit --all
+	comam = commit --amend
+    come = commit --allow-empty
+	comfi = commit --fixup
+	comsq = commit --squash
+    conf = config
+	confsubmod = config -f .gitmodules
+	fetchp = fetch --prune
+	last = log -2 HEAD
+	lgg = log --graph --oneline -n 10
+	lggs = log --graph --oneline -n 5
+	lgga = log --graph --oneline
+    rb = rebase
+	rbi = rebase --interactive
+	resh = reset --hard
+	ress = reset --soft
+    remotev = remote -vv
+	stat = status --short -uall
+	unstage = reset HEAD --
+	aliases = config --get-regex ^alias
+[core]
+	editor = vim
+[push]
+	default = upstream
+[rebase]
+	autoSquash = true
+[pull]
+	ff = only
