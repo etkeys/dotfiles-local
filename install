@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONFIG="install.conf.yml"
+DOTBOT_BIN="bin/dotbot"
+DOTBOT_DIR="$(git -C "${BASEDIR}" config --file=.gitmodules --get submodule.dotbot.path)"
+PLUGIN_DIR="sublib/dotbot-plugins/"
+
+
+cd "${BASEDIR}"
+
+git submodule sync --recursive --quiet
+git submodule update --init --recursive 
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" \
+    --base-directory "${BASEDIR}" \
+    --config-file "${CONFIG}" \
+    --plugin "${BASEDIR}/${PLUGIN_DIR}/sudo/sudo.py" \
+    "${@}"
