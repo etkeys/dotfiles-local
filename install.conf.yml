@@ -11,6 +11,7 @@
 - create: 
     - ~/bin/i3blockets
     - ~/repos
+    - ~/.themes
 
 
 - sudo:
@@ -73,3 +74,14 @@
       command: >
           cd sublib/i3blocklets &&
           ./deploy
+
+
+    # TODO What if there is more than just one theme file?
+    # TODO Should these tar files be move to some object storage location and not git?
+    - description: Install theme files
+      stdout: false
+      command: >
+          cd ~ &&
+          ls .dotfiles.local/themes/*.tar.gz | head -n 1 | xargs tar -vxf
+
+
