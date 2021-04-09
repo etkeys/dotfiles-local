@@ -1,0 +1,21 @@
+{
+    "linux":{
+        "keepOldImages":true,
+        "pictureDir":"%HOME%/Pictures/Wallpapers/randombg-dotnet",
+        "randomBgDbDir":"%HOME%/Pictures/Wallpapers/randombg-dotnet",
+        "symlinkToCurrent":true
+    },
+    "source":{
+        "categories":[
+            "abstract",
+            "fantasy",
+            "landscapescities",
+            "landscapesnature",
+            "space"]
+    },
+    "windows":{
+        "keepOldImages":false,
+        "pictureDir":"%USERPROFILE%\\Pictures\\Wallpapers\\randombg-dotnet",
+        "randomBgDbDir":"%USERPROFILE%\\Pictures\\Wallpapers\\randombg-dotnet"
+    }
+}

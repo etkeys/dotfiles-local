@@ -60,6 +60,7 @@
     ~/:
         path: home/.*
         glob: true
+    ~/.config: ~ 
     ~/toby:
         path: /nfs/home/$USER
         ignore-missing: true

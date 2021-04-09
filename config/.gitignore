@@ -1,0 +1,19 @@
+cef_user_data/
+chromium/
+dconf/
+enchant/
+evolution/
+# libvirt files should be on external drive not user .config
+libvirt/
+unity3d/
+# This file gets updated everytime pavucontrol is closed.
+# It contains nothing of significance.
+pavucontrol.ini
+# pulse creates a file for itself to hold user connection info. Ignore it
+pulse/
+# QtProject.conf and Trolltect.conf are Qt settings files.
+# as of 11/22/2020, there is no reason to keep them.
+QtProject.conf
+Trolltech.conf
+# as of 11/22/2020, there is nothing in here I want.
+vlc/

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=thunderbird
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_US]=Thunderbird
+Name=Thunderbird
+Comment[en_US]=Email client
+Comment=Email client

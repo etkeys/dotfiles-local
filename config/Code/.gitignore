@@ -1,0 +1,7 @@
+*
+!.gitignore
+
+# Have to have "!User" before "!User/*" so git knows
+# it has to look at the directory.
+!User
+!User/*

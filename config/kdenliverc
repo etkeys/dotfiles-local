@@ -1,0 +1,99 @@
+[KFileDialog Settings]
+Recent Files[$e]=18-11-11-15-24-25.flv,file:$HOME/Documents/ODUWork/LeADERS/EndCredits.png,file:$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/Case3-CurrentJob.png,file:$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/Case2-InnovationPortal.png,file:$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/Case1-DatabaseClass.png,file:$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/TheQuestions.png,file:$HOME/Videos/18-11-11-16-27-45.flv,file:$HOME/Videos/18-11-11-16-23-25.flv,file:$HOME/Videos/18-11-11-16-15-34.flv,file:$HOME/Videos/18-11-11-15-59-08.flv,file:$HOME/Videos/18-11-11-15-50-42.flv,file:$HOME/Videos/18-11-11-15-33-33.flv,file:$HOME/Videos/18-11-11-15-29-05.flv
+Recent URLs[$e]=file:$HOME/Videos/,file:$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/,file:$HOME/Documents/ODUWork/LeADERS/
+
+[MainWindow]
+Height 1080=709
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAeAAAABNvwBAAAADPsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAATAD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAXQD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAawD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAPIAAABdAP////wAAAD2AAAA6gAAAFkA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAAWQD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAEwA/////AAAAeQAAAI+AAAA3AD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAB5AP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAANwA/////AAABCYAAANaAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEwA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABTQD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAAC0AP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACvAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABRgD///8AAAeAAAACqQAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABgAZQB4AHQAcgBhAFQAbwBvAGwAQgBhAHIBAAACOv////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+Width 1920=1280
+Window-Maximized 1080x1920=true
+
+[Recent Dirs]
+KdenliveClipFolder[$e]=$HOME/Documents/ODUWork/LeADERS/,$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/,$HOME/Videos/
+KdenliveProjectsFolder[$e]=$HOME/Documents/ODUWork/LeADERS/AcademicInternship2,$HOME/Documents
+
+[Recent Files]
+File1[$e]=$HOME/Documents/ODUWork/LeADERS/AcademicInternship2/AcademicInternship_part2.kdenlive
+Name1[$e]=AcademicInternship_part2.kdenlive
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[bin]
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAABIAAAAzAAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAADMAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAE8=
+
+[capture]
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+defaultaudioapp=/usr/bin/audacity
+defaultimageapp=/snap/bin/gimp
+defaultprojectfolder[$e]=$HOME/Documents
+ffmpegpath[$e]=/usr/bin/ffmpeg
+ffplaypath[$e]=/usr/bin/ffplay
+ffprobepath[$e]=/usr/bin/ffprobe
+mltpath[$e]=/usr/share/mlt/profiles/
+rendererpath[$e]=/usr/bin/melt
+
+[project]
+proxyextension=mkv
+proxyparams=-vf yadif,scale=960:-2 -qscale 3 -vcodec mjpeg -acodec pcm_s16le
+
+[sdl]
+audiobackend=sdl2_audio
+sdlAudioBackend=sdl2_audio
+
+[timeline]
+trackheight=62
+
+[unmanaged]
+current_profile=atsc_1080p_2997
+default_profile=atsc_1080p_2997
+defaultrescaleheight=180
+force_breeze=true
+monitor_audio=false
+producerslist=avformat,avformat-novalidate,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,pgm,slowmotion,ladspa.1416,ladspa.1885,ladspa.1881,xml,xml-string,xml-nogl,decklink,framebuffer,pango,pixbuf,blipflash,count,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,qimage,qtext,kdenlivetitle
+project_display_ratio=1.7777777777777777
+project_fps=29.97002997002997
+widgetstyle=cleanlooks
+
+[version]
+version=17.12.3

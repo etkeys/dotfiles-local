@@ -1,0 +1,75 @@
+
+function Get-PromptGitInfoDirty {
+        $status = git status 2>&1
+        $newFile = ("$status" | Where-Object {$_ -Match "new file:"}).Count
+        $untracked = ("$status" | Where-Object {$_ -Match "Untracked files"}).Count
+
+
+
+        $bits = ""
+        if ($newFile -gt 0){
+            $bits = "${bits}A"
+        }
+        if ($untracked -gt 0){
+            $bits = "${bits}U"
+        }
+
+        # $dirty = 
+        if ("$bits" -ne ""){
+            $bits = "$bits "
+        }
+        return "$bits"
+}
+
+function Get-PromptGitInfo {
+    if (git --version 2> $null){
+        $branch = git branch 2> $null | `
+            Where-Object {$_ -Match '^[*]'} | `
+            Select-Object -First 1 | `
+            ForEach-Object {$_ -Replace '^[*]\s*', ''}
+
+        if ($branch){
+            $stat = Get-PromptGitInfoDirty
+            $result = "($stat$branch)"
+        }
+        else {
+            $result = ""
+        }
+    }
+    else{
+        $result = ""
+    }
+    return "$result"
+}
+
+function Get-PromptCurrentDirectory {
+    # $msDefault = "$($executionContext.SessionsState.Path.CurrentLocation)"
+    $loc = Get-Location
+    if ("$loc".StartsWith($HOME)){
+        $result = "~$("$loc".Substring("$HOME".Length))"
+    }
+    else{
+        $result = "$loc" 
+    }
+    return "$result"
+}
+
+function Prompt {
+    # NOTE: Don't try to use Host.Ui.RawUi.Foreground...it could give -1 which
+    #       will cause an error
+    $defaultColor = "White"
+    
+    # Line 1
+    Write-Host "" -ForegroundColor $defaultColor
+
+    # Line 2
+    Write-Host -NoNewLine "PS" -ForegroundColor $defaultColor
+    Write-Host -NoNewline " $(Get-PromptCurrentDirectory)" -ForegroundColor "Blue"
+    Write-Host " $(Get-PromptGitInfo)" -ForegroundColor "Cyan"
+
+    # Line 3
+    # TODO write directory stack info
+    # Write-Host -NoNewline "> " -ForegroundColor "$startColor"
+    Write-Host "" -NoNewline -ForegroundColor "$defaultColor"
+    return "> "
+}

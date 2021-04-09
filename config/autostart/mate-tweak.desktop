@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=mate-tweak
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_US]=MATE Tweak
+Name=MATE Tweak
+Comment[en_US]=
+Comment=

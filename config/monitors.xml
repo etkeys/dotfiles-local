@@ -1,0 +1,70 @@
+<monitors version="1">
+  <configuration>
+      <clone>no</clone>
+      <output name="DVI-D-1">
+          <vendor>ACR</vendor>
+          <product>0x032d</product>
+          <serial>0x73203644</serial>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60</rate>
+          <x>1920</x>
+          <y>0</y>
+          <rotation>normal</rotation>
+          <reflect_x>no</reflect_x>
+          <reflect_y>no</reflect_y>
+          <primary>no</primary>
+      </output>
+      <output name="HDMI-1">
+          <vendor>ACR</vendor>
+          <product>0x01aa</product>
+          <serial>0x10414ffe</serial>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60</rate>
+          <x>0</x>
+          <y>0</y>
+          <rotation>normal</rotation>
+          <reflect_x>no</reflect_x>
+          <reflect_y>no</reflect_y>
+          <primary>yes</primary>
+      </output>
+      <output name="DP-1">
+      </output>
+  </configuration>
+  <configuration>
+      <clone>no</clone>
+      <output name="DVI-D-0">
+          <vendor>ACR</vendor>
+          <product>0x032d</product>
+          <serial>0x73203644</serial>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60</rate>
+          <x>1920</x>
+          <y>0</y>
+          <rotation>normal</rotation>
+          <reflect_x>no</reflect_x>
+          <reflect_y>no</reflect_y>
+          <primary>no</primary>
+      </output>
+      <output name="HDMI-0">
+          <vendor>ACR</vendor>
+          <product>0x01aa</product>
+          <serial>0x10414ffe</serial>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60</rate>
+          <x>0</x>
+          <y>0</y>
+          <rotation>normal</rotation>
+          <reflect_x>no</reflect_x>
+          <reflect_y>no</reflect_y>
+          <primary>yes</primary>
+      </output>
+      <output name="DP-0">
+      </output>
+      <output name="DP-1">
+      </output>
+  </configuration>
+</monitors>

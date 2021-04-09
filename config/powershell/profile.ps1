@@ -1,0 +1,1 @@
+/home/erik/repos/powershell/new-prompt/profile.ps1

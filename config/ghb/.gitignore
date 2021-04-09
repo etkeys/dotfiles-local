@@ -1,0 +1,9 @@
+# "ghb" is Graphical Handbrake
+# at the moment, there is nothing I want to save but it'd be
+# nice to keep the folder.
+
+EncodeLogs/
+Activity.log*
+ghb.pid.26007
+presets.json
+queue.26007
