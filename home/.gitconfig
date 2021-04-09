@@ -29,7 +29,8 @@
 	resh = reset --hard
 	ress = reset --soft
     remotev = remote -vv
-	stat = status --short -uall
+	stat = status --short
+	stata = status --short -uall
 	unstage = reset HEAD --
 	aliases = config --get-regex ^alias
 [core]
