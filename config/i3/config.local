@@ -29,7 +29,6 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # exec_always "/home/erik/.config/xrandr/current"
 # exec_always "choose-xrandr.sh"
-# exec_always feh --bg-scale /home/erik/Pictures/Wallpapers/randombg-dotnet/current
 
 exec --no-startup-id "pactl load-module module-bluetooth-discover; blueman-applet"
 exec --no-startup-id kdeconnect-indicator
