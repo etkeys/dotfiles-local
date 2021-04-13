@@ -1,0 +1,22 @@
+
+## This file is the contains the machine specific "local" personalization
+
+
+###########################################
+#      Personalized commands
+###########################################
+
+# Adding additional things
+# https://github.com/erikdubois/Archi3/blob/master/config
+
+#-----------------------------------------
+#        Keybindings
+#-----------------------------------------
+
+# quick shutdown
+bindsym $mod+Shift+Pause exec shutdown now
+
+#----------------------------------------
+#      Autostart applications
+#----------------------------------------
+
