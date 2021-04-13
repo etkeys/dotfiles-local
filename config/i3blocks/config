@@ -29,26 +29,21 @@
 command=SCRIPT_DIR=~/bin/i3blocks; eval $SCRIPT_DIR/$(ls $SCRIPT_DIR | grep -oE "$BLOCK_NAME(\.(py|sh))?")
 separator_block_width=10
 
-
 [bridge-lifts]
 format=json
 interval=600
 _TARGET_BRIDGE_NAME=High Rise
 
-
 [travel-time]
 interval=600
 
-
 [weather]
 interval=600
-
 
 [volume]
 LABEL=♪ 
 interval=once
 signal=10
-
 
 [cpu_usage]
 label=CPU 
@@ -86,16 +81,13 @@ interval=5
 instance=Core 3
 _CPU_TEMP_ALARM_THRESHOLD=75
 
-
 [memory]
 interval=15
 label=RAM 
 
-
 [diskspace]
 interval=60
 label=DISK 
-
 
 [keyindicator]
 markup=pango
@@ -114,14 +106,12 @@ signal=11
 COLOR_ON=#ff0000
 COLOR_OFF=#ffffff
 KEY=CAPS
-
-# [battery]
-# label=⚡
-# interval=30
-
+[battery]
+label=⚡
+interval=30
 
 [date-time-cal]
 interval=30
 
-[feh-bg-refresh]
-interval=600
+# [feh-bg-refresh]
+# interval=600
