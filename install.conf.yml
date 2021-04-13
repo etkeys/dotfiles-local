@@ -71,6 +71,10 @@
 
 
 - shell:
+    - description: Build i3 config file
+      command: config/i3/build-i3-config.sh
+
+
     - description: Install i3blocks blocklets
       command: >
           cd sublib/i3blocklets &&
