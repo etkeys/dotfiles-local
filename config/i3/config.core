@@ -188,6 +188,7 @@ exec --no-startup-id i3-msg 'workspace 10; workspace 1;'
 #----------------------------------------
 #      Autostart applications
 #----------------------------------------
+exec_always feh --bg-scale /home/erik/Pictures/Wallpapers/current
 
 exec compton
 exec --no-startup-id nm-applet
