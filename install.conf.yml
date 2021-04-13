@@ -64,10 +64,6 @@
     ~/toby:
         path: /nfs/home/$USER
         ignore-missing: true
-    ~/VirtualBoxVMs:
-        path: $VMDIR/$USER/virtualbox
-        ignore-missing: true
-        if: '[ ! -z $VMDIR ]'
 
 
 - shell:
@@ -84,5 +80,4 @@
       command: >
           cd ~ &&
           ls .dotfiles.local/themes/*.tar.gz | head -n 1 | xargs tar -vxf
-
 
