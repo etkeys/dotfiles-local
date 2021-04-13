@@ -60,6 +60,8 @@
     ~/:
         path: home/.*
         glob: true
+        exclude:
+            - home/.gitignore
     ~/.config: ~ 
     ~/toby:
         path: /nfs/home/$USER
