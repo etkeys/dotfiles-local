@@ -89,6 +89,7 @@
 
     - description: Install i3blocks blocklets
       command: >
+          export BLOCKLETS_DEPLOY_DIR=~/bin/i3blocklets &&
           cd sublib/i3blocklets &&
           ./deploy
 
