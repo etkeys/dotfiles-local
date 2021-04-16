@@ -16,7 +16,6 @@ apt,flameshot,any,,
 snap,hugo,any,--channel=extended/stable,
 apt,hwinfo,any,,
 apt,i3-wm,any,,
-apt,i3blocks,any,,Replaced with i3xrocks
 pip,i3ipc,any,,Python lib to control i3wm and sway
 apt,landscape-common,any,,Display system info when starting a terminal emulator
 snap,libreoffice,any,,

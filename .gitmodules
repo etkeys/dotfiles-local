@@ -10,3 +10,7 @@
 	path = sublib/i3blocklets
 	url = https://github.com/etkeys/i3blocks-blocklets.git
     ignore = dirty
+[submodule "i3blocks"]
+	path = sublib/i3blocks
+	url = https://github.com/vivien/i3blocks.git
+    ignore = dirty
