@@ -40,6 +40,16 @@
           command: install-packages.py --tags "any"
 
 
+        - description: Build and install i3blocks
+          command: >
+              REPO=$(git config --file=.gitmodules --get submodule.i3blocks.path) &&
+              cd "$REPO" &&
+              ./autogen.sh &&
+              ./configure &&
+              make &&
+              make install
+
+
         - description: Configure qemu-virgil
           command: >
               (command -v snap && snap list qemu-virgil) >/dev/null 2>&1 &&
