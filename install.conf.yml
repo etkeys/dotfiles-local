@@ -66,6 +66,23 @@
           command: adduser ${SUDO_USER} kvm
 
 
+        - description: Update lightdm background
+          command: >
+              FILE=/usr/share/glib-2.0/schemas/30_ubuntu-mate.gschema.override &&
+              ( [ -f $FILE ] && [ ! -f ${FILE}.bak ] ) &&
+              (
+                  mkdir -p /usr/share/backgrounds &&
+                  cp Pictures/Wallpapers/Reflections_by_Trenton_Fox.jpg /usr/share/backgrounds/ &&
+                  cpb $FILE &&
+                  sed -i -E "
+                    s/^background=.+/background='\/usr\/share\/backgrounds\/Reflections_by_Trenton_Fox.jpg'/;
+                    s/^draw-user-backgrounds=.+/draw-user-backgrounds=false/;
+                 " $FILE &&
+                 glib-compile-schemas "$(dirname $FILE)"
+              ) ||
+              echo "Could not find $FILE for lightdm update or already updated... skipping."
+
+
 - link:
     ~/:
         path: home/.*
@@ -73,6 +90,9 @@
         exclude:
             - home/.gitignore
     ~/.config: ~ 
+    ~/Pictures/Wallpapers/current:
+        path: ~/Pictures/Wallpapers/FoxMinimalist2.jpg 
+        ignore-missing: true
     ~/toby:
         path: /nfs/home/$USER
         ignore-missing: true
@@ -102,4 +122,10 @@
           cd ~ &&
           ls .dotfiles.local/themes/*.tar.gz | head -n 1 | xargs tar -vxf
 
+
+    # TODO Like with theme files, I feel like these should be placed in object storage?
+    - description: Copy wallpapers
+      command: >
+          mkdir -p ~/Pictures/Wallpapers &&
+          cp Pictures/Wallpapers/*.jpg ~/Pictures/Wallpapers/
 
