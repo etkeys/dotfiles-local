@@ -15,6 +15,7 @@ apt,ffmpeg,any,,
 apt,flameshot,any,,
 snap,hugo,any,--channel=extended/stable,
 apt,hwinfo,any,,
+apt,i3lock,any,,
 apt,i3-wm,any,,
 pip,i3ipc,any,,Python lib to control i3wm and sway
 apt,landscape-common,any,,Display system info when starting a terminal emulator
@@ -35,6 +36,7 @@ apt,rxvt-unicode,any,,
 apt,sqlite3,any,,
 apt,sqlite3-doc,any,,
 apt,sqlite3-pcre,any,,
+apt,suckless-tools,any,,Just for dmenu
 apt,thunderbird,any,,
 apt,transmission,any,,
 snap,uno-calculator,any,--channel=beta,
