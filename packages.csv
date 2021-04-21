@@ -19,12 +19,12 @@ apt,i3lock,any,,
 apt,i3-wm,any,,
 pip,i3ipc,any,,Python lib to control i3wm and sway
 apt,landscape-common,any,,Display system info when starting a terminal emulator
-snap,libreoffice,any,,
 apt,lm-sensors,any,,
 apt,lxappearance,any,,Will be need if creating i3 desktop from ground up.
 apt,lynx,any,,Helps with markdown rendering.
 apt,nfs-common,any,,
 apt,numlockx,any,,
+snap,onlyoffice-desktopeditors,any,,
 apt,packages-microsoft-prod,any,,
 apt,pandoc,any,,Helps with markdown rendering.
 apt,pavucontrol,any,,For jet need to install this after alsa.
