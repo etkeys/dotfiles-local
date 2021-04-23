@@ -174,24 +174,14 @@ bindsym $mod+Shift+p exec pavucontrol
 #     Speical Windowing Instructions
 #----------------------------------------
 
-workspace 9 output DVI-D-0
-workspace 10 output DVI-D-0
-
-assign [class="Code"] 1
-assign [class="Thunderbird"] 10
-
 for_window [class="Yad"] floating enable     
-
-# switch to workspace 10 to get rid of empty workspace 9
-exec --no-startup-id i3-msg 'workspace 10; workspace 1;'
 
 #----------------------------------------
 #      Autostart applications
 #----------------------------------------
-exec_always feh --bg-scale /home/erik/Pictures/Wallpapers/current
+exec_always --no-startup-id feh --bg-scale /home/erik/Pictures/Wallpapers/current
 
-exec compton
+exec --no-startup-id compton
 exec --no-startup-id nm-applet
-exec --no-startup-id "pactl load-module module-bluetooth-discover; blueman-applet"
 exec --no-startup-id "sleep 3; redshift-gtk"
 
