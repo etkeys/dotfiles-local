@@ -24,11 +24,24 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #----------------------------------------
+#     Speical Windowing Instructions
+#----------------------------------------
+
+workspace 9 output DVI-D-0
+workspace 10 output DVI-D-0
+
+assign [class="Code"] 1
+assign [class="Thunderbird"] 10
+
+#----------------------------------------
 #      Autostart applications
 #----------------------------------------
 
 # exec_always "/home/erik/.config/xrandr/current"
 # exec_always "choose-xrandr.sh"
+
+# switch to workspace 10 to get rid of empty workspace 9
+exec --no-startup-id i3-msg 'workspace 10; workspace 1;'
 
 exec --no-startup-id "pactl load-module module-bluetooth-discover; blueman-applet"
 exec --no-startup-id kdeconnect-indicator
