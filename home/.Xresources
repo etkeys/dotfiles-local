@@ -1,6 +1,8 @@
 !xterm*faceName: Monospace Bold 
 !xterm*faceSize: 13
 
+Xcursor.theme: breeze_cursors
+
 !URxvt.background: [70]#232729
 URxvt.background: rgba:2300/2700/2900/d300
 URxvt.cursorColor: #cb4b16
