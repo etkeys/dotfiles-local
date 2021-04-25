@@ -11,6 +11,8 @@ URxvt.font: xft:monospace:bold:size=12
 URxvt.foreground: #eeeeec
 URxvt.meta8: true
 URxvt.scrollBar: false
+URxvt.transparent: true
+URxvt.shading: 30
 
 !*.alpha: 200
 !*.background:#232729
