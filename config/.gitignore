@@ -17,3 +17,4 @@ QtProject.conf
 Trolltech.conf
 # as of 11/22/2020, there is nothing in here I want.
 vlc/
+libaccounts-glib
