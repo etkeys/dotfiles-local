@@ -10,8 +10,15 @@
 
 - create: 
     - ~/bin/i3blocklets
+    - ~/Desktop
+    - ~/Documents
+    - ~/Music
+    - ~/Pictures
+    - ~/Public
+    - ~/Templates
     - ~/repos
     - ~/.themes
+    - ~/Videos
 
 
 - sudo:
