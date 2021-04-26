@@ -181,7 +181,7 @@ for_window [class="Yad"] floating enable
 #----------------------------------------
 exec_always --no-startup-id feh --bg-scale /home/erik/Pictures/Wallpapers/current
 
-exec --no-startup-id compton
+exec --no-startup-id mate-settings-daemon
 exec --no-startup-id nm-applet
 exec --no-startup-id "sleep 3; redshift-gtk"
 
