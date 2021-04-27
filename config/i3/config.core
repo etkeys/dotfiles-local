@@ -179,7 +179,7 @@ for_window [class="Yad"] floating enable
 #----------------------------------------
 #      Autostart applications
 #----------------------------------------
-exec_always --no-startup-id feh --bg-scale /home/erik/Pictures/Wallpapers/current
+# exec_always --no-startup-id feh --bg-scale /home/erik/Pictures/Wallpapers/current
 
 exec --no-startup-id mate-settings-daemon
 exec --no-startup-id nm-applet
