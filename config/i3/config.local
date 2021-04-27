@@ -37,8 +37,7 @@ assign [class="Thunderbird"] 10
 #      Autostart applications
 #----------------------------------------
 
-# exec_always "/home/erik/.config/xrandr/current"
-# exec_always "choose-xrandr.sh"
+exec_always --no-startup-id "/home/erik/.config/xrandr/current"
 
 # switch to workspace 10 to get rid of empty workspace 9
 exec --no-startup-id i3-msg 'workspace 10; workspace 1;'
