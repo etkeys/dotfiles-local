@@ -20,3 +20,6 @@ bindsym $mod+Shift+Pause exec shutdown now
 #      Autostart applications
 #----------------------------------------
 
+
+exec --no-startup-id caffeine-indicator
+
