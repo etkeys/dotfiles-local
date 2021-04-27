@@ -20,6 +20,7 @@ apt,i3blocks,any,,Replaced with i3xrocks
 pip,i3ipc,any,,Python lib to control i3wm and sway
 apt,landscape-common,any,,Display system info when starting a terminal emulator
 snap,libreoffice,any,,
+apt,lm-sensors,any,,
 apt,lxappearance,any,,Will be need if creating i3 desktop from ground up.
 apt,lynx,any,,Helps with markdown rendering.
 apt,nfs-common,any,,
