@@ -1,0 +1,37 @@
+
+URxvt.background:   color_base03
+
+!Black
+URxvt.color0:       color_dgrey
+URxvt.color8:       color_grey
+!Red
+URxvt.color1:       color_dred
+URxvt.color9:       color_red
+!Green
+URxvt.color2:       color_dgreen
+URxvt.color10:      color_green
+!Yellow
+URxvt.color3:       color_dyellow
+URxvt.color11:      color_yellow
+!Blue
+URxvt.color4:       color_dblue
+URxvt.color12:      color_blue
+!Magenta
+URxvt.color5:       color_dmagenta
+URxvt.color13:      color_magenta
+!Cyan
+URxvt.color6:       color_dcyan
+URxvt.color14:      color_cyan
+!White
+URxvt.color7:       color_dwhite
+URxvt.color15:      color_white
+
+URxvt.cursorColor:  color_orange
+URxvt.depth:        32
+URxvt.font:         typeface_terminal
+URxvt.foreground:   color_white
+URxvt.meta8:        true
+URxvt.scrollBar:    false
+URxvt.transparent:  true
+URxvt.shading:      30
+

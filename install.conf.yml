@@ -123,6 +123,7 @@
         exclude:
             - home/.gitignore
     ~/.config: ~ 
+    ~/.Xresources: ~/.config/my-configs/xresources/current
     ~/Pictures/Wallpapers/current:
         path: ~/Pictures/Wallpapers/FoxMinimalist2.jpg 
         ignore-missing: true
