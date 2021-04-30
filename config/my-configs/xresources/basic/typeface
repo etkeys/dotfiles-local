@@ -1,0 +1,5 @@
+
+#define typeface_bar_glyph  Ubuntu 12
+#define typeface_wm         pango:Ubuntu Medium 13
+#define typeface_bar        pango:Ubuntu Medium 13, Material Design Icons 13
+#define typeface_terminal   xft:monospace:bold:size=12
