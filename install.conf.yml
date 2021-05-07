@@ -57,6 +57,13 @@
               ./configure &&
               make &&
               make install
+        
+        - description: Build and install xgetres
+          command: >
+              REPO=$(git config --file=.gitmodules --get submodule.xgetres.path) &&
+              cd "$REPO" &&
+              make &&
+              make install
 
 
         - description: Configure qemu-virgil
