@@ -5,7 +5,7 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorStyle": "block",
     "editor.emptySelectionClipboard": false,
-    "editor.fontFamily": "'Ubuntu mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Ubuntu mono', 'Material Design Icons', 'FontAwesome', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 17,
     "editor.fontWeight": "bold",
     "editor.lineNumbers": "relative",
@@ -40,6 +40,19 @@
     "python.pythonPath": "/usr/bin/python3",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.tabs.enabled": true,
     "vim.cursorStylePerMode.insert": "line",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
