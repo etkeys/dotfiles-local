@@ -46,6 +46,15 @@
         - description: Install packages
           command: install-packages.py --tags "any"
 
+        
+        - description: Update alternatives
+          command: >
+            declare -A alts &&
+            alts[editor]="$(command -v vim.basic)" &&
+            alts[x-terminal-emulator]="$(command -v urxvt)" &&
+            (for key in "${!alts[@]"; do
+              update-alternatives --set $key "${alts[$key]}"
+            done)
 
         - description: Build and install i3blocks
           command: >
