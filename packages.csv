@@ -2,7 +2,7 @@ provider,package,tags,additional_options,comments
 apt,acpi,any,,
 apt,arandr,any,,
 apt,arp-scan,any,,
-apt,autoconf,any,,
+apt,autoconf,any,,for building from source using autogen.sh
 apt,build-essential,any,,
 apt,caffeine,any,,
 apt,cheese,any,,
@@ -10,7 +10,7 @@ snap,chromium,any,,
 snap,code,any,--classic,
 apt,dconf-editor,any,,
 apt,dotnet-sdk-3.1,any,,
-apt,feh,any,,For controlling background wallpaper. Might not be needed with relgolith
+apt,feh,,,For controlling background wallpaper. Might not be needed with relgolith
 apt,ffmpeg,any,,
 apt,flameshot,any,,
 snap,hugo,any,--channel=extended/stable,
@@ -19,6 +19,8 @@ apt,i3lock,any,,
 apt,i3-wm,any,,
 pip,i3ipc,any,,Python lib to control i3wm and sway
 apt,landscape-common,any,,Display system info when starting a terminal emulator
+apt,libvirt-clients,any,,Programs for libvirt (e.g. virsh)
+apt,libvirt-daemon-system,any,,libvirt daemon
 apt,lm-sensors,any,,
 apt,lxappearance,any,,Will be need if creating i3 desktop from ground up.
 apt,lynx,any,,Helps with markdown rendering.
