@@ -1,0 +1,4 @@
+
+!i3-wm.program.reboot_predicate: shutdown-warn-external-drives
+!i3-wm.program.shutdown_predicate: shutdown-warn-external-drives
+!i3-wm.program.suspend_predicate: shutdown-warn-external-drives

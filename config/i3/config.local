@@ -1,28 +1,6 @@
 
 ## This file is the contains the machine specific "local" personalization
 
-
-###########################################
-#      Personalized commands
-###########################################
-
-# Adding additional things
-# https://github.com/erikdubois/Archi3/blob/master/config
-
-#-----------------------------------------
-#        Keybindings
-#-----------------------------------------
-
-# quick shutdown
-bindsym $mod+Shift+Pause exec shutdown-warn-external-drives
-
-# Media player controls
-bindsym XF86AudioMedia exec --no-startup-id vlc
-bindsym XF86AudioPlay exec playerctl play
-#bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-
 #----------------------------------------
 #     Speical Windowing Instructions
 #----------------------------------------
@@ -33,12 +11,24 @@ workspace 10 output DVI-D-0
 assign [class="Code"] 1
 assign [class="Thunderbird"] 10
 
+#-----------------------------------------
+#        Keybindings
+#-----------------------------------------
+
+# Media player controls
+bindsym XF86AudioMedia exec --no-startup-id vlc
+bindsym XF86AudioPlay exec playerctl play
+#bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+
 #----------------------------------------
 #      Autostart applications
 #----------------------------------------
 
 # switch to workspace 10 to get rid of empty workspace 9
-exec --no-startup-id i3-msg 'workspace 10; workspace 1;'
+exec --no-startup-id i3-msg 'workspace 10; layout stacking; workspace 1;'
 
 exec --no-startup-id "pactl load-module module-bluetooth-discover; blueman-applet"
 exec --no-startup-id kdeconnect-indicator
