@@ -32,6 +32,7 @@ snap,powershell,any,--classic,
 apt,python3-venv,any,,
 apt,redshift,any,,
 apt,redshift-gtk,any,,
+apt,remontoire,any,,i3 key mapping viewer from Regolith
 apt,rename,any,,
 apt,rxvt-unicode,any,,
 apt,sqlite3,any,,
