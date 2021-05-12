@@ -2,7 +2,7 @@ provider,package,tags,additional_options,comments
 apt,acpi,any,,
 apt,arandr,any,,
 apt,arp-scan,any,,
-apt,autoconf,any,,
+apt,autoconf,any,,For building from source using autogen.sh
 apt,build-essential,any,,
 apt,caffeine,any,,
 apt,cheese,any,,
