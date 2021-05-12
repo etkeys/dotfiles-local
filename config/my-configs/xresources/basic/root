@@ -11,4 +11,7 @@
 #include "/home/erik/.config/my-configs/xresources/basic/theme"
 
 ! -- Applications
+#include "/home/erik/.config/my-configs/xresources/basic/dmenu"
+#include "/home/erik/.config/my-configs/xresources/basic/i3-wm"
+#include "/home/erik/.config/i3/xresources.local"
 #include "/home/erik/.config/my-configs/xresources/basic/urxvt"

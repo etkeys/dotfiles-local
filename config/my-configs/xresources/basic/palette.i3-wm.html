@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        td {
+            border: solid;
+            padding: 3px;
+        }
+        .color_16_dgrey {background-color: #232729;}
+        .color_16_dred {background-color: #cc241d;}
+        .color_16_dgreen {background-color: #4e9a06;}
+        .color_16_dyellow {background-color: #c4a000;}
+        .color_16_dblue {background-color: #215d9c;}
+        .color_16_dmagenta {background-color: #75507b;}
+        .color_16_dcyan {background-color: #06989a;}
+        .color_16_dwhite {background-color: #b9b9b9;}
+        .color_16_grey {background-color: #555753;}
+        .color_16_red {background-color: #c07f7f;}
+        .color_16_green {background-color: #8ae234;}
+        .color_16_yellow {background-color: #fce94f;}
+        .color_16_blue {background-color: #729fcf;}
+        .color_16_magenta {background-color: #ad7fa8;}
+        .color_16_cyan {background-color: #34e2e2;}
+        .color_16_white {background-color: #eeeeec;}
+
+        .color_base03 {background-color: #090a0b;}
+        .color_base02 {background-color: #232729;}
+        .color_base01 {background-color: #232729;}
+        .color_base00 {background-color: #555753;}
+        .color_base0 {background-color: #215d9c;}
+        .color_base1 {background-color: #215d9c;}
+        .color_base2 {background-color: #b9b9b9;}
+        .color_base3 {background-color: #eeeeec;}
+        .color_yellow {background-color: #fce94f;}
+        .color_orange {background-color: #cb4b16;}
+        .color_red {background-color: #cc241d;}
+        .color_magenta {background-color: #ad7fa8;}
+        .color_violet {background-color: #75507b;}
+        .color_blue {background-color: #215d9c;}
+        .color_cyan {background-color: #34e2e2;}
+        .color_green {background-color: #8ae234;}
+        .color_white {background-color: #eeeeec;}
+        #palette {
+            float: left;
+            /* position: fixed; */
+        }
+    </style>
+</head>
+<body>
+    <h1>i3-wm palette</h1>
+    <div id="palette">
+        <h2>Palette</h2>
+        <table>
+            <tr> <th>Color name</th> <th>Appearance</th> </tr>
+            <tr> <td>color_16_dgrey</td> <td class="color_16_dgrey"></td> </tr>
+            <tr> <td>color_16_dred</td> <td class="color_16_dred"></td> </tr>
+            <tr> <td>color_16_dgreen</td> <td class="color_16_dgreen"></td> </tr>
+            <tr> <td>color_16_dyellow</td> <td class="color_16_dyellow"></td> </tr>
+            <tr> <td>color_16_dblue</td> <td class="color_16_dblue"></td> </tr>
+            <tr> <td>color_16_dmagenta</td> <td class="color_16_dmagenta"></td> </tr>
+            <tr> <td>color_16_dcyan</td> <td class="color_16_dcyan"></td> </tr>
+            <tr> <td>color_16_dwhite</td> <td class="color_16_dwhite"></td> </tr>
+            <tr> <td>color_16_grey</td> <td class="color_16_grey"></td> </tr>
+            <tr> <td>color_16_red</td> <td class="color_16_red"></td> </tr>
+            <tr> <td>color_16_green</td> <td class="color_16_green"></td> </tr>
+            <tr> <td>color_16_yellow</td> <td class="color_16_yellow"></td> </tr>
+            <tr> <td>color_16_blue</td> <td class="color_16_blue"></td> </tr>
+            <tr> <td>color_16_magenta</td> <td class="color_16_magenta"></td> </tr>
+            <tr> <td>color_16_cyan</td> <td class="color_16_cyan"></td> </tr>
+            <tr> <td>color_16_white</td> <td class="color_16_white"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>color_base02</td> <td class="color_base02"></td> </tr>
+            <tr> <td>color_base01</td> <td class="color_base01"></td> </tr>
+            <tr> <td>color_base00</td> <td class="color_base00"></td> </tr>
+            <tr> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>color_base1</td> <td class="color_base1"></td> </tr>
+            <tr> <td>color_base2</td> <td class="color_base2"></td> </tr>
+            <tr> <td>color_base3</td> <td class="color_base3"></td> </tr>
+            <tr> <td>color_yellow</td> <td class="color_yellow"></td> </tr>
+            <tr> <td>color_orange</td> <td class="color_orange"></td> </tr>
+            <tr> <td>color_red</td> <td class="color_red"></td> </tr>
+            <tr> <td>color_magenta</td> <td class="color_magenta"></td> </tr>
+            <tr> <td>color_violet</td> <td class="color_violet"></td> </tr>
+            <tr> <td>color_blue</td> <td class="color_blue"></td> </tr>
+            <tr> <td>color_cyan</td> <td class="color_cyan"></td> </tr>
+            <tr> <td>color_green</td> <td class="color_green"></td> </tr>
+            <tr> <td>color_white</td> <td class="color_white"></td> </tr>
+        </table>
+    </div>
+    <div style="margin-left: 22%;">
+        <h2>Scheme: i3-wm.client</h2>
+        <table>
+            <tr> <th>Scheme element</th> <th>Color name (default)</th> <th>Appearance (default)</th> <th>Color name (override)</th> <th>Appearance (override)</th> </tr>
+            <tr> <td>focused.color.border</td> <td>#002b36</td> <td style="background-color: #003b36;"></td> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>focused.color.background</td> <td>#586e75</td> <td style="background-color: #586e75;"></td> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>focused.color.text</td> <td>#fdf6e3</td> <td style="background-color: #fdf6e3;"></td> <td>color_base3</td> <td class="color_base3"></td> </tr>
+            <tr> <td>focused.color.indicator</td> <td>#268bd2</td> <td style="background-color: #268bd2;"></td> <td>color_orange</td> <td class="color_orange"></td> </tr>
+            <tr> <td>focused.color.child_border</td> <td>unset</td> <td>unset</td> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>focused_inactive.color.border</td> <td>#002b36</td> <td style="background-color: #002b36;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>focused_inactive.color.background</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>focused_inactive.color.text</td> <td>#839496</td> <td style="background-color: #839496;"></td> <td>color_base2</td> <td class="color_base2"></td> </tr>
+            <tr> <td>focused_inactive.color.indicator</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_orange</td> <td class="color_orange"></td> </tr>
+            <tr> <td>focused_inactive.color.child_border</td> <td>unset</td> <td>unset</td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>unfocused.color.border</td> <td>#002b36</td> <td style="background-color: #002b36;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>unfocused.color.background</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>unfocused.color.text</td> <td>#839496</td> <td style="background-color: #839496;"></td> <td>color_base2</td> <td class="color_base2"></td> </tr>
+            <tr> <td>unfocused.color.indicator</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_orange</td> <td class="color_orange"></td> </tr>
+            <tr> <td>unfocused.color.child_border</td> <td>unset</td> <td>unset</td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>urgent.color.border</td> <td>#002b36</td> <td style="background-color: #002b36;"></td> <td>color_red</td> <td class="color_red"></td> </tr>
+            <tr> <td>urgent.color.background</td> <td>#dc322f</td> <td style="background-color: #dc322f;"></td> <td>color_red</td> <td class="color_red"></td> </tr>
+            <tr> <td>urgent.color.text</td> <td>#fdf6e3</td> <td style="background-color: #fdf6e3;"></td> <td>color_base3</td> <td class="color_base3"></td> </tr>
+            <tr> <td>urgent.color.indicator</td> <td>#002b36</td> <td style="background-color: #002b36;"></td> <td>color_yellow</td> <td class="color_yellow"></td> </tr>
+            <tr> <td>urgent.color.child_border</td> <td>unset</td> <td>unset</td> <td>color_red</td> <td class="color_red"></td> </tr>
+        </table>
+        <h2>Scheme: i3-wm.bar</h2>
+        <table>
+            <tr> <th>Scheme element</th> <th>Color name (default)</th> <th>Appearance (default)</th> <th>Color name (override)</th> <th>Appearance (override)</th> </tr>
+            <tr> <td>background.color</td> <td>#002b36</td> <td style="background-color: #003b36;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>statusline.color</td> <td>#93a1a1</td> <td style="background-color: #93a1a1;"></td> <td>colue_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>separator.color</td> <td>#268bd2</td> <td style="background-color: #268bd2;"></td> <td>color_base00</td> <td class="color_base00"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>workspace.active.background.color</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_base02</td> <td class="color_base02"></td> </tr>
+            <tr> <td>workspace.active.border.color</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>workspace.active.text.color</td> <td>#586e75</td> <td style="background-color: #586e75;"></td> <td>color_base3</td> <td class="color_base3"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>workspace.focused.background.color</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>workspace.focused.border.color</td> <td>#073642</td> <td style="background-color: #073642;"></td> <td>color_base0</td> <td class="color_base0"></td> </tr>
+            <tr> <td>workspace.focused.text.color</td> <td>#586e75</td> <td style="background-color: #586e75;"></td> <td>color_base3</td> <td class="color_base3"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>workspace.inactive.background.color</td> <td>#002b36</td> <td style="background-color: #002b36;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>workspace.inactive.border.color</td> <td>#002b36</td> <td style="background-color: #002b36;"></td> <td>color_base03</td> <td class="color_base03"></td> </tr>
+            <tr> <td>workspace.inactive.text.color</td> <td>#586e75</td> <td style="background-color: #586e75;"></td> <td>color_base2</td> <td class="color_base2"></td> </tr>
+            <tr> <td></td> </tr>
+            <tr> <td>workspace.urget.background.color</td> <td>#dc322f</td> <td style="background-color: #dc322f;"></td> <td>color_red</td> <td class="color_red"></td> </tr>
+            <tr> <td>workspace.urget.border.color</td> <td>#dc322f</td> <td style="background-color: #dc322f;"></td> <td>color_red</td> <td class="color_red"></td> </tr>
+            <tr> <td>workspace.urget.text.color</td> <td>#fdf6e3</td> <td style="background-color: #fdf6e3;"></td> <td>color_base3</td> <td class="color_base3"></td> </tr>
+        </table>
+    </div>
+
+</body>
