@@ -13,8 +13,6 @@
 #        Keybindings
 #-----------------------------------------
 
-# quick shutdown
-bindsym $mod+Shift+Pause exec shutdown now
 
 #----------------------------------------
 #      Autostart applications
