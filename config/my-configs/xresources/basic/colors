@@ -1,27 +1,39 @@
 
 ! -- Basic 16 color pallet
-#define color_dgrey     #232729
-#define color_dred      #cc241d
-#define color_dgreen    #4e9a06
-#define color_dyellow   #c4a000
-#define color_dblue     #3465a4
-#define color_dmagenta  #75507b
-#define color_dcyan     #06989a
-#define color_dwhite    #b9b9b9
-#define color_grey      #555753
-#define color_red       #c07f7f
-#define color_green     #8ae234
-#define color_yellow    #fce94f
-#define color_blue      #729fcf
-#define color_magenta   #ad7fa8
-#define color_cyan      #34e2e2
-#define color_white     #eeeeec
+#define color_16_dgrey     #232729
+#define color_16_dred      #cc241d
+#define color_16_dgreen    #4e9a06
+#define color_16_dyellow   #c4a000
+#define color_16_dblue     #215d9c
+#define color_16_dmagenta  #75507b
+#define color_16_dcyan     #06989a
+#define color_16_dwhite    #b9b9b9
+#define color_16_grey      #555753
+#define color_16_red       #c07f7f
+#define color_16_green     #8ae234
+#define color_16_yellow    #fce94f
+#define color_16_blue      #729fcf
+#define color_16_magenta   #ad7fa8
+#define color_16_cyan      #34e2e2
+#define color_16_white     #eeeeec
 
 ! -- Specific use cases
-#define color_base03    color_dGrey
+#define color_base03    #090a0b
+#define color_base02    color_16_dgrey
+#define color_base01    color_16_dgrey
+#define color_base00    color_16_grey
 
-! Blue
-#define color_base0     #215d9c
+#define color_base0     color_16_dblue
+#define color_base1     color_16_dblue
+#define color_base2     color_16_dwhite
+#define color_base3     color_16_white
 
-
+#define color_yellow    color_16_yellow
 #define color_orange    #cb4b16
+#define color_red       color_16_dred
+#define color_magenta   color_16_magenta
+#define color_violet    color_16_dmagenta
+#define color_blue      color_16_dblue
+#define color_cyan      color_16_cyan
+#define color_green     color_16_green
+#define color_white     color_16_white

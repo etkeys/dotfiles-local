@@ -1,0 +1,8 @@
+
+dmenu.font: typeface_bar
+dmenu.color.critical_background: color_yellow
+dmenu.color.critical_selected: color_red
+dmenu.color.critical_text: color_base03
+dmenu.color.standard_background: color_base03
+dmenu.color.standard_selected: color_base0
+dmenu.color.standard_text: color_base3
