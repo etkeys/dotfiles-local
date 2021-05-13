@@ -1,0 +1,17 @@
+! Basic theme is the coloring that I used from Apr 2018 until May 2021.
+! This is the first theming I did for my i3 setup.
+
+! -- Colors
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/colors"
+
+! -- Font
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/typeface"
+
+! -- Theme
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/theme"
+
+! -- Applications
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/dmenu"
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/i3-wm"
+#include "/home/erik/.config/i3/xresources.local"
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/urxvt"

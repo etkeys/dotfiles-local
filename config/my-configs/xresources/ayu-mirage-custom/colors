@@ -1,0 +1,39 @@
+
+! -- Basic 16 color pallet
+#define color_16_dgrey     #0a0e14
+#define color_16_dred      #ff3333
+#define color_16_dgreen    #86b300
+#define color_16_dyellow   #e6b450
+#define color_16_dblue     #399ee6
+#define color_16_dmagenta  #a37acc
+#define color_16_dcyan     #5ccfe6
+#define color_16_dwhite    #cbccc6
+#define color_16_grey      #a0a6ac
+#define color_16_red       #f28779
+#define color_16_green     #bae67e
+#define color_16_yellow    #ffd580
+#define color_16_blue      #73d0ff
+#define color_16_magenta   #b4bfff
+#define color_16_cyan      #95e6cb
+#define color_16_white     #e1e1e2
+
+! -- Specific use cases
+#define color_base03    color_16_dgrey
+#define color_base02    #1f2430
+#define color_base01    #232834
+#define color_base00    #4d5566
+
+#define color_base0     color_16_grey
+#define color_base1     #d3d5d8
+#define color_base2     color_16_white
+#define color_base3     color_16_white
+
+#define color_yellow    color_16_yellow
+#define color_orange    #ff8f40
+#define color_red       color_16_dred
+#define color_magenta   color_16_magenta
+#define color_violet    color_16_dmagenta
+#define color_blue      color_16_blue
+#define color_cyan      color_16_cyan
+#define color_green     color_16_green
+#define color_white     color_16_white

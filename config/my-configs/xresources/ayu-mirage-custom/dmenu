@@ -1,0 +1,10 @@
+
+dmenu.font: typeface_bar
+dmenu.color.crit_bg: color_yellow
+dmenu.color.crit_fg: color_base03
+dmenu.color.crit_sbg: color_red
+dmenu.color.crit_sfg: color_base3
+dmenu.color.std_bg: color_base03
+dmenu.color.std_fg: color_base3
+dmenu.color.std_sbg: color_base00
+dmenu.color.std_sfg: color_base3

@@ -1,0 +1,39 @@
+
+URxvt.background:   color_base03
+
+!Black
+URxvt.color0:       color_16_dgrey
+URxvt.color8:       color_16_grey
+!Red
+URxvt.color1:       color_16_dred
+URxvt.color9:       color_16_red
+!Green
+URxvt.color2:       color_16_dgreen
+URxvt.color10:      color_16_green
+!Yellow
+URxvt.color3:       color_16_dyellow
+URxvt.color11:      color_16_yellow
+!Blue
+! ---Yes, I flipped this intentionally to make blue and cyan different
+URxvt.color4:       color_16_blue
+URxvt.color12:      color_16_dblue
+!Magenta
+URxvt.color5:       color_16_dmagenta
+URxvt.color13:      color_16_magenta
+!Cyan
+! ---Yes, I flipped this intentionally to make green and cyan different
+URxvt.color6:       color_16_cyan
+URxvt.color14:      color_16_dcyan
+!White
+URxvt.color7:       color_16_dwhite
+URxvt.color15:      color_16_white
+
+URxvt.cursorColor:  color_orange
+URxvt.depth:        32
+URxvt.font:         typeface_terminal
+URxvt.foreground:   color_16_white
+URxvt.meta8:        true
+URxvt.scrollBar:    false
+URxvt.transparent:  true
+URxvt.shading:      30
+
