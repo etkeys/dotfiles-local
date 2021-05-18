@@ -3,8 +3,8 @@
 	email = e.t.keys@gmail.com
 [alias]
     a = add
-    ai = add --interactive
-	au = add -u
+    ai = !git add --interactive && git stat
+	au = !git add -u && git stat
     br = branch
 	bra = branch -a
 	brd = branch -D
@@ -17,7 +17,7 @@
     come = commit --allow-empty
 	comfi = commit --fixup
 	comsq = commit --squash
-    conf = config
+    conf = config --global
 	confsubmod = config -f .gitmodules
 	fetchp = fetch --prune
 	last = log -2 HEAD
@@ -33,6 +33,8 @@
 	stata = status --short -uall
 	unstage = reset HEAD --
 	aliases = config --get-regex ^alias
+	aa = add --all --dry-run
+	aaa = !git add --all && git stat
 [core]
 	editor = vim
 [push]
