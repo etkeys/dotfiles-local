@@ -13,5 +13,6 @@
 ! -- Applications
 #include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/dmenu"
 #include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/i3-wm"
+#include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/i3blocks"
 #include "/home/erik/.config/i3/xresources.local"
 #include "/home/erik/.config/my-configs/xresources/ayu-mirage-custom/urxvt"

@@ -124,6 +124,10 @@
       command: config/i3/build-i3-config.sh
 
 
+    - description: Build i3blocks config file
+      command: config/i3/build-i3blocks-config.sh
+
+
     - description: Install i3blocks blocklets
       command: >
           export BLOCKLETS_DEPLOY_DIR=~/bin/i3blocklets &&

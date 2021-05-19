@@ -1,0 +1,5 @@
+i3blocklets.color.bad: color_red
+i3blocklets.color.degraded: color_yellow
+i3blocklets.color.good: color_green
+i3blocklets.color.good2: color_blue
+i3blocklets.color.normal: color_base3

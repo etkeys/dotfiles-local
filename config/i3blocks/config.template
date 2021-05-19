@@ -26,6 +26,11 @@
 # Global properties
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
+BLOCK_TEXT_COLOR_BAD=$i3blocklets.color.bad
+BLOCK_TEXT_COLOR_DEGRADED=$i3blocklets.color.degraded
+BLOCK_TEXT_COLOR_GOOD=$i3blocklets.color.good
+BLOCK_TEXT_COLOR_GOOD2=$i3blocklets.color.good2
+BLOCK_TEXT_COLOR_NORMAL=$i3blocklets.color.normal
 command=SCRIPT_DIR=~/bin/i3blocklets; eval $SCRIPT_DIR/$(ls $SCRIPT_DIR | grep -oE "$BLOCK_NAME(\.(py|sh))?")
 separator_block_width=10
 
@@ -62,7 +67,6 @@ interval=5
 instance=Core 0
 separator=false
 separator_block_width=3
-_CPU_TEMP_ALARM_THRESHOLD=75
 
 [cpu-core-temp]
 format=json
@@ -70,7 +74,6 @@ interval=5
 instance=Core 1
 separator=false
 separator_block_width=3
-_CPU_TEMP_ALARM_THRESHOLD=75
 
 [cpu-core-temp]
 format=json
@@ -78,13 +81,11 @@ interval=5
 instance=Core 2
 separator=false
 separator_block_width=3
-_CPU_TEMP_ALARM_THRESHOLD=75
 
 [cpu-core-temp]
 format=json
 interval=5
 instance=Core 3
-_CPU_TEMP_ALARM_THRESHOLD=75
 
 
 [memory]
@@ -103,16 +104,12 @@ interval=once
 separator=false
 separator_block_width=3
 signal=11
-COLOR_ON=#ff0000
-COLOR_OFF=#ffffff
 KEY=NUM
 
 [keyindicator]
 markup=pango
 interval=once
 signal=11
-COLOR_ON=#ff0000
-COLOR_OFF=#ffffff
 KEY=CAPS
 
 # [battery]
