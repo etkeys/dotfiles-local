@@ -35,6 +35,7 @@
 	aliases = config --get-regex ^alias
 	aa = add --all --dry-run
 	aaa = !git add --all && git stat
+	submod = submodule
 [core]
 	editor = vim
 [push]
