@@ -32,6 +32,7 @@ URxvt.cursorColor:  color_orange
 URxvt.depth:        32
 URxvt.font:         typeface_terminal
 URxvt.foreground:   color_16_white
+URxvt.letterSpace:  -1
 URxvt.meta8:        true
 URxvt.scrollBar:    false
 URxvt.transparent:  true

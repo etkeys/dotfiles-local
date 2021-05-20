@@ -2,4 +2,11 @@
 #define typeface_bar_glyph  Ubuntu 12
 #define typeface_wm         pango:Ubuntu Medium 10
 #define typeface_bar        pango:Ubuntu Medium 10, Material Design Icons 11
-#define typeface_terminal   xft:monospace:bold:size=11
+#define typeface_terminal   xft:Ubuntu Mono:style=bold:size=13
+
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting:    1
+Xft.antialias:  1
+
