@@ -366,8 +366,7 @@ bindsym $mod+$i3-wm.binding.restart restart
 
 ## Session // Logout // <><Shift> e ##
 set_from_resource $i3-wm.binding.logout i3-wm.binding.logout Shift+e
-# set_from_resource $i3-wm.program.logout i3-wm.program.logout dmenu-prompt critical "Do you wish to logout?" "i3-msg exit"
- set_from_resource $i3-wm.program.logout i3-wm.program.logout dmenu-style --critical --yesno --prompt "Do you wish to logout?" -- "i3-msg exit"
+ set_from_resource $i3-wm.program.logout i3-wm.program.logout dmenu-style --critical --yesno --prompt "Do you wish to logout?" -- i3-msg exit
 bindsym $mod+$i3-wm.binding.logout exec --no-startup-id $i3-wm.program.logout
 
 ## Session // Lock Screen // <> Pause ##
