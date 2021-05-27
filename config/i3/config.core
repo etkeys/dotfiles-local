@@ -445,6 +445,8 @@ set_from_resource $i3-wm.binding.web_search i3-wm.binding.web_search F3
 set_from_resource $i3-wm.program.web_search i3-wm.program.web_search dmenu-websearch.sh
 bindsym $mod+$i3-wm.binding.web_search exec --no-startup-id $i3-wm.program.web_search
 
+## Launch // X window properties // xprop ##
+
 ## Launch // Youtube search // <> F4 ##
 set_from_resource $i3-wm.binding.youtube_search i3-wm.binding.youtube_search F4
 set_from_resource $i3-wm.program.youtube_search i3-wm.program.youtube_search dmenu-youtubesearch.sh
