@@ -37,6 +37,7 @@ hide_edge_borders $i3-wm.hide.edge.borders
 floating_maximum_size 1024 x 640
 for_window [class="floating_window"] floating enable
 for_window [class="Yad"] floating enable
+for_window [class="Gtkhash"] floating enable
 
 ###############################################################################
 # i3 Colors and Fonts
