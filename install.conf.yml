@@ -15,7 +15,14 @@
 
 
 - sudo:
+    - create: ['/nfs/home/erik']
+       
+
     - shell:
+        - description: Set nfs mount permissions
+          command: chown erik:erik /nfs/home/erik
+
+
         - description: Add Microsoft .NET Core package signing key
           command: >
               cd /tmp && 
@@ -39,7 +46,16 @@
         - description: Install packages
           command: install-packages.py --tags "any"
 
-        
+
+        - description: Add nfs mount to fstab
+          command: >
+              FSTAB=/etc/fstab &&
+              MYFSTAB=etc/fstab.nfs-my-home &&
+              (grep -qFf $MYFSTAB $FSTAB &&
+              echo "nfs mounts exist in $FSTAB ... skipping.") ||
+              (printf "\n$(cat $MYFSTAB)\n" >> $FSTAB)
+
+
         - description: Update alternatives
           command: >
             declare -A alts &&
