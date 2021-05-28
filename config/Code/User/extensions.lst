@@ -6,6 +6,7 @@ Ionide.Ionide-fsharp
 mitchdenny.ecdc
 ms-dotnettools.csharp
 ms-python.python
+ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-vscode.powershell
 teabyii.ayu
