@@ -1,0 +1,203 @@
+{
+    "auto-close-tag.SublimeText3Mode": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.cursorStyle": "block",
+    "editor.emptySelectionClipboard": false,
+    "editor.fontFamily": "'Ubuntu mono', 'Material Design Icons', 'FontAwesome', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 17,
+    "editor.fontWeight": "bold",
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.rulers": [80, 120],
+    "editor.minimap.maxColumn": 80,
+    "editor.suggest.insertMode": "insert",
+    "editor.suggest.showStatusBar": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+    "FSharp.fsacRuntime": "netcore",
+    "FSharp.lineLens.enabled":"replaceCodeLens",
+    "FSharp.lineLens.prefix": " # ",
+    "git.enabled": false,
+    "keyboard.dispatch": "keyCode",
+    "markdownlint.config": {
+        "MD007":{"indent": 4},
+        "MD013": false,
+        "MD024": false
+    },
+    "php.validate.executablePath": "/opt/lampp/bin/php",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/usr/bin/python3",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.tabs.enabled": true,
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            // Easier exit out of insert mode
+            "before":["j","j"],
+            "after":["<Esc>"]
+        }  
+    ],
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            //New file
+            "before":["<leader>", "<C-n>"],
+            "commands":["workbench.action.files.newUntitledFile"]
+        },
+        {
+            // Ctrl-y increased distance
+            "before":["<C-y>"],
+            "after":["3","<C-y>"]
+        },
+        {
+            // Ctrl-e increased distance
+            "before":["<C-e>"],
+            "after":["3","<C-e>"]
+        },
+        {
+            // Add a blank line below
+            "before": ["<leader>",";"],
+            "after": ["A","<enter>","<Esc>"]
+        },
+        {
+            // Copy current line down
+            "before": ["<leader>", "d"],
+            "commands":["editor.action.copyLinesDownAction"]
+        },
+        {
+            // Copy current line up
+            "before": ["<leader>", "u"],
+            "commands":["editor.action.copyLinesUpAction"]
+        },
+        {
+            // Move current line down
+            "before": ["<leader>", "D"],
+            "commands":["editor.action.moveLinesDownAction"]
+        },
+        {
+            // Move current line up
+            "before": ["<leader>", "U"],
+            "commands":["editor.action.moveLinesUpAction"]
+        },
+        {
+            // Switch to window on the left
+            "before": ["g", "H"],
+            "after": ["<C-w>","h"]
+        },
+        {
+            // Switch to window on the right
+            "before": ["g","L"],
+            "after": ["<C-w>","l"]
+        },
+        {
+            // Switch to window down
+            "before": ["g","J"],
+            "after": ["<C-w>","j"]
+        },
+        {
+            // Switch to window up
+            "before": ["g","K"],
+            "after": ["<C-w>","k"]
+        },
+        {
+            // Switch to tab left
+            "before": ["g","h"],
+            "commands": [":tabp"]
+        },
+        {
+            // Switch to tab right
+            "before": ["g","l"],
+            "commands": [":tabn"]
+        },
+        {
+            // Change "delete (cut)" to true delete
+            "before":["d"],
+            "after":["\"", "_","d"]
+        }
+    ],
+    "vim.surround": true,
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            // Ctrl-y increased distance
+            "before":["<C-y>"],
+            "after":["3","<C-y>"]
+        },
+        {
+            // Ctrl-e increased distance
+            "before":["<C-e>"],
+            "after":["3","<C-e>"]
+        },
+        {
+            // Copy current line down
+            "before": ["<leader>", "d"],
+            "commands":["editor.action.copyLinesDownAction"]
+        },
+        {
+            // Copy current line up
+            "before": ["<leader>", "u"],
+            "commands":["editor.action.copyLinesUpAction"]
+        },
+        {
+            // Move current line down
+            "before": ["<leader>", "D"],
+            "commands":["editor.action.moveLinesDownAction"]
+        },
+        {
+            // Move current line up
+            "before": ["<leader>", "U"],
+            "commands":["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["<leader>", "<C-c>"],
+            "commands": ["editor.action.clipboardCopyAction"]
+        },
+        {
+            // Change "delete (cut)" to true delete
+            "before":["d"],
+            "after":["\"", "_","d"]
+        }
+    ],
+    
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "workbench.settings.editor": "json",
+    "workbench.editor.tabSizing": "fit",
+    "workbench.editor.wrapTabs": true,
+    "extensions.ignoreRecommendations": false,
+    "python.languageServer": "Pylance",
+    "FSharp.suggestGitignore": false,
+    "FSharp.suggestSdkScripts": false,
+    "FSharp.showExplorerOnStartup": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "python.showStartPage": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+}

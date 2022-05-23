@@ -1,0 +1,62 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "shift+f7",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    // {
+    //     "key": "ctrl+b",
+    //     "command": "-workbench.action.toggleSidebarVisibility"
+    // },
+    // {
+    //     "key": "f7",
+    //     "command": "-editor.action.diffReview.next",
+    //     "when": "isInDiffEditor"
+    // },
+    // {
+    //     "key": "f7",
+    //     "command": "-editor.action.wordHighlight.next",
+    //     "when": "editorTextFocus && hasWordHighlights"
+    // },
+    {
+        "key": "f7",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
+    },
+    // {
+    //     "key": "shift+f7",
+    //     "command": "-editor.action.wordHighlight.prev",
+    //     "when": "editorTextFocus && hasWordHighlights"
+    // },
+    {
+        "key": "shift+insert",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!edtiorTextFocus"
+    },
+    {
+        "key": "alt+escape",
+        "command": "workbench.action.blur"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "f5",
+        "command": "mssql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    }
+]

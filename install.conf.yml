@@ -7,3 +7,56 @@
         stderr: true
         stdout: true
 
+- create:
+  - ~/repos
+
+- sudo:
+  - shell:
+    -
+      description: Add Microsoft .NET Core package signing key
+      command: >
+          cd /tmp &&
+          wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release --short --release)/packages-microsoft-prod.deb" &&
+          dpkg -i packages-microsoft-prod.deb
+    -
+      description: Add repo for steam
+      command: yes | add-apt-repository mutliverse
+    -
+      description: Perform apt cache update
+      command: apt-get update
+    -
+      description: Install packages
+      command: install-packages.py --tags "any"
+    -
+      description: Update alternatives
+      command: >
+        declare -A alts &&
+        alts[editor]="$(command -v vim.basic)" &&
+        alts[x-terminal-emulator]="$(command -v urxvt)" &&
+        (for key in "${!alts[@]"; do
+          update-alternatives --set $key "${alts[$key]}"
+        done)
+    -
+      description: Configure qemu-virgil
+      command: >
+          (command -v snap && snap list qemu-virgil) >/dev/null 2>&1 &&
+          (
+              snap connect qemu-virgil:audio-record &&
+              snap connect qemu-virgil:kvm &&
+              snap connect qemu-virgil:raw-usb &&
+              snap connect qemu-virgil:removable-media
+          ) ||
+          echo "qemu-virgil not installed... skipping."
+    -
+      description: Add installing user to kvm group
+      command: adduser ${SUDO_USER} kvm
+
+- link:
+  ~/:
+    path: home/.*
+    glob: true
+    exclude:
+        - home/.gitignore
+  ~/.config/Code: config/Code
+  ~/.config/redshift: config/redshift
+
