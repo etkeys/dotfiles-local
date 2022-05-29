@@ -23,4 +23,5 @@ apt,sqlite3-doc,any,,
 apt,sqlite3-pcre,any,,
 apt,thunderbird,any,,
 apt,vim-gtk3,any,,
+apt,xscreensaver-gl,,For GL matrix screensaver
 pip,youtube-dl,any,,
