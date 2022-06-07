@@ -45,6 +45,7 @@
       glob: true
       exclude:
           - home/.gitignore
+    ~/.config/autostart: config/autostart
     ~/.config/Code: config/Code
     ~/.config/redshift: config/redshift
 
