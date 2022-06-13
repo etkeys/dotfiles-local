@@ -7,3 +7,20 @@
         stderr: true
         stdout: true
 
+- create:
+    - ~/repos
+
+- sudo:
+    - shell:
+        -
+          description: Add Microsoft .NET Core package signing key
+          command: >
+              cd /tmp &&
+              wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release --short --release)/packages-microsoft-prod.deb" &&
+              dpkg -i packages-microsoft-prod.deb
+        -
+          description: Add repo for quickemu
+          command: yes | apt-add-repository ppa:flexiondotorg/quickemu
+        -
+          description: Perform apt cache update
+          command: apt-get update
