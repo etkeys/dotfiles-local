@@ -10,7 +10,7 @@ snap,hugo,any,,
 apt,hwinfo,any,,
 apt,landscape-common,any,,Display system info when starting a terminal emulator
 apt,lm-sensors,any,,
-snap,only-office,desktopeditors,any,,
+snap,onlyoffice-desktopeditors,any,,
 apt,packages-microsoft-prod,any,,
 snap,powershell,any,--classic,
 apt,python3-venv,any,,
