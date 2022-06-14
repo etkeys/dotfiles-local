@@ -24,3 +24,15 @@
         -
           description: Perform apt cache update
           command: apt-get update
+        -
+          description: Install packages
+          command: install-packages.py --tags "any"
+        -
+          description: Update alternatives
+          command: >
+            declare -A alts &&
+            alts[editor]="$(command -v vim.basic)" &&
+            (for key in "${!alts[@]}"; do
+              update-alternatives --set $key "${alts[$key]}"
+            done)
+
