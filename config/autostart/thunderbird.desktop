@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=thunderbird
+Hidden=false
+Name[en_US]=Thunderbird
+Name=Thunderbird
+Comment[en_US]=
+Comment=
+X-MATE-Autostart-Delay=0
