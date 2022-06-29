@@ -48,4 +48,5 @@
     ~/.config/autostart: config/autostart
     ~/.config/Code: config/Code
     ~/.config/redshift: config/redshift
+    ~/.config/monitors.aranar.sh: config/monitors.aranar.sh
 

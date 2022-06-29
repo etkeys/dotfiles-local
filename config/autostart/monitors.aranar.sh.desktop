@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/erik/.config/monitors.aranar.sh
+Hidden=false
+Name[en_US]=Set correct displays
+Name=Set correct displays
+Comment[en_US]=Sets the display arrangement for 3 monitor layout
+Comment=Sets the display arrangement for 3 monitor layout
+X-MATE-Autostart-Delay=1
