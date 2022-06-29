@@ -16,8 +16,6 @@ snap,powershell,any,--classic,
 apt,python3-venv,any,,
 apt,qemu,any,,For running virtual machines
 apt,quickemu,any,,Quickly create and run optimised desktop virtual machines
-apt,redshift,any,,
-apt,redshift-gtk,any,,
 apt,sqlite3,any,,
 apt,sqlite3-doc,any,,
 apt,sqlite3-pcre,any,,
