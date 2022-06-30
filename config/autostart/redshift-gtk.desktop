@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=redshift-gtk
+Hidden=false
+Name[en_US]=Redshift
+Name=Redshift
+Comment[en_US]=
+Comment=
+X-MATE-Autostart-Delay=3
