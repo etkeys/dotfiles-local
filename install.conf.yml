@@ -47,6 +47,6 @@
           - home/.gitignore
     ~/.config/autostart: config/autostart
     ~/.config/Code: config/Code
-    ~/.config/redshift: config/redshift
+    ~/.config/redshift.conf: config/redshift.conf
     ~/.config/monitors.aranar.sh: config/monitors.aranar.sh
 
