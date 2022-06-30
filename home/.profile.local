@@ -1,0 +1,17 @@
+
+
+if [ -n "$DESKTOP_SESSION" ] ; then
+    export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+
+if [ -n "$DESKTOP_SESSION" ] && [ "$DESKTOP_SESSION" = "i3" ] ; then 
+    xset r rate 1000 10
+    xset dpms 0 0 600
+    xmodmap "$HOME/.Xmodmap"
+fi
+
+if [ -d "$HOME/repos/scripts" ] ; then
+    PATH="$HOME/repos/scripts:$PATH"
+fi
+

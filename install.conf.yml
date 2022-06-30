@@ -36,3 +36,10 @@
               update-alternatives --set $key "${alts[$key]}"
             done)
 
+- link:
+    ~/:
+      path: home/.*
+      glob: true
+      exclude:
+          - home/.gitignore
+

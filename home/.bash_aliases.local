@@ -1,0 +1,5 @@
+
+# editors
+    alias c="code -r"   # Execute vscode using a current instance
+    alias cn="code -n"  # Execute vscode using a new instance
+
