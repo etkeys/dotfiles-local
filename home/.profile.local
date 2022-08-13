@@ -1,5 +1,6 @@
 
 export VMDIR="/mnt/vmdrive/erik"
+export LINODE_S3_ENDPOINT="https://us-east-1.linodeobjects.com"
 
 if [ -n "$DESKTOP_SESSION" ] ; then
     export XDG_CONFIG_HOME="$HOME/.config"
