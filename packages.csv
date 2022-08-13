@@ -8,6 +8,7 @@ apt,ffmpeg,any,,
 apt,flameshot,any,,
 snap,hugo,any,,
 apt,hwinfo,any,,
+apt,kdeconnect,any,,
 apt,landscape-common,any,,Display system info when starting a terminal emulator
 apt,lm-sensors,any,,
 snap,onlyoffice-desktopeditors,any,,

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=kdeconnect-indicator
+Hidden=false
+Name[en_US]=KDE Connect
+Name=KDE Connect
+Comment[en_US]=Starts KDE connect to connect to paired smart phone
+Comment=Starts KDE connect to connect to paired smart phone
+X-MATE-Autostart-Delay=0
