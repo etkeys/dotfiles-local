@@ -7,7 +7,7 @@
     "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "'Ubuntu mono', 'Material Design Icons', 'FontAwesome', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 17,
-    "editor.fontWeight": "bold",
+    "editor.fontWeight": "normal",
     "editor.lineNumbers": "relative",
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
@@ -200,4 +200,5 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
+    "security.workspace.trust.untrustedFiles": "open",
 }
