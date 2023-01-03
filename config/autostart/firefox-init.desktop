@@ -2,8 +2,8 @@
 Type=Application
 Exec=firefox-init
 Hidden=false
-Name[en_US]=Initial firefox
+Name[en_US]=firefox
 Name=Initial firefox
 Comment[en_US]=Starts firefox with important tabs
 Comment=Starts firefox with important tabs
-X-MATE-Autostart-Delay=2
+X-MATE-Autostart-Delay=5
