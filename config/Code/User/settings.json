@@ -1,45 +1,46 @@
 {
-    "auto-close-tag.SublimeText3Mode": true,
+    "accessibility.dimUnfocused.enabled": true,
+    "accessibility.dimUnfocused.opacity": 0.4,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorStyle": "block",
+    "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "'Ubuntu mono', 'Material Design Icons', 'FontAwesome', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 17,
+    "editor.fontSize": 13,
     "editor.fontWeight": "normal",
     "editor.lineNumbers": "relative",
-    "editor.tabSize": 4,
-    "editor.detectIndentation": false,
-    "editor.rulers": [80, 120],
     "editor.minimap.maxColumn": 80,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80,
+        120
+    ],
     "editor.suggest.insertMode": "insert",
     "editor.suggest.showStatusBar": true,
+    "editor.tabSize": 4,
+    "extensions.ignoreRecommendations": false,
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
         "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.pytest_cache": true,
+        "**/.svn": true,
+        "**/.venv": true,
         "**/__pycache__": true,
-        "**/.pytest_cache": true
+        "**/CVS": true
     },
-    "FSharp.fsacRuntime": "netcore",
-    "FSharp.lineLens.enabled":"replaceCodeLens",
-    "FSharp.lineLens.prefix": " # ",
-    "git.enabled": false,
+    "json.format.enable": true,
+    "json.sortOnSave.enable": true,
     "keyboard.dispatch": "keyCode",
-    "markdownlint.config": {
-        "MD007":{"indent": 4},
-        "MD013": false,
-        "MD024": false
-    },
     "php.validate.executablePath": "/opt/lampp/bin/php",
-    "python.linting.pylintEnabled": false,
-    "python.linting.enabled": true,
-    "python.pythonPath": "/usr/bin/python3",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontWeight": "bold",
+    "python.languageServer": "Pylance",
+    "python.terminal.activateEnvironment": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.profiles.linux": {
         "bash": {
             "path": "bash"
@@ -48,157 +49,288 @@
             "path": "fish"
         },
         "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
+            "icon": "terminal-powershell",
+            "path": "pwsh"
         }
     },
     "terminal.integrated.tabs.enabled": true,
     "vim.cursorStylePerMode.insert": "line",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
+            "after": [
+                "<Esc>"
+            ],
             // Easier exit out of insert mode
-            "before":["j","j"],
-            "after":["<Esc>"]
-        }  
+            "before": [
+                "j",
+                "j"
+            ]
+        }
     ],
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             //New file
-            "before":["<leader>", "<C-n>"],
-            "commands":["workbench.action.files.newUntitledFile"]
+            "before": [
+                "<leader>",
+                "<C-n>"
+            ],
+            "commands": [
+                "workbench.action.files.newUntitledFile"
+            ]
         },
         {
+            "after": [
+                "3",
+                "<C-y>"
+            ],
             // Ctrl-y increased distance
-            "before":["<C-y>"],
-            "after":["3","<C-y>"]
+            "before": [
+                "<C-y>"
+            ]
         },
         {
+            "after": [
+                "3",
+                "<C-e>"
+            ],
             // Ctrl-e increased distance
-            "before":["<C-e>"],
-            "after":["3","<C-e>"]
+            "before": [
+                "<C-e>"
+            ]
         },
         {
+            "after": [
+                "A",
+                "<enter>",
+                "<Esc>"
+            ],
             // Add a blank line below
-            "before": ["<leader>",";"],
-            "after": ["A","<enter>","<Esc>"]
+            "before": [
+                "<leader>",
+                ";"
+            ]
         },
         {
             // Copy current line down
-            "before": ["<leader>", "d"],
-            "commands":["editor.action.copyLinesDownAction"]
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "commands": [
+                "editor.action.copyLinesDownAction"
+            ]
         },
         {
             // Copy current line up
-            "before": ["<leader>", "u"],
-            "commands":["editor.action.copyLinesUpAction"]
+            "before": [
+                "<leader>",
+                "u"
+            ],
+            "commands": [
+                "editor.action.copyLinesUpAction"
+            ]
         },
         {
             // Move current line down
-            "before": ["<leader>", "D"],
-            "commands":["editor.action.moveLinesDownAction"]
+            "before": [
+                "<leader>",
+                "D"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
         },
         {
             // Move current line up
-            "before": ["<leader>", "U"],
-            "commands":["editor.action.moveLinesUpAction"]
+            "before": [
+                "<leader>",
+                "U"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
         },
         {
+            "after": [
+                "<C-w>",
+                "h"
+            ],
             // Switch to window on the left
-            "before": ["g", "H"],
-            "after": ["<C-w>","h"]
+            "before": [
+                "g",
+                "H"
+            ]
         },
         {
+            "after": [
+                "<C-w>",
+                "l"
+            ],
             // Switch to window on the right
-            "before": ["g","L"],
-            "after": ["<C-w>","l"]
+            "before": [
+                "g",
+                "L"
+            ]
         },
         {
+            "after": [
+                "<C-w>",
+                "j"
+            ],
             // Switch to window down
-            "before": ["g","J"],
-            "after": ["<C-w>","j"]
+            "before": [
+                "g",
+                "J"
+            ]
         },
         {
+            "after": [
+                "<C-w>",
+                "k"
+            ],
             // Switch to window up
-            "before": ["g","K"],
-            "after": ["<C-w>","k"]
+            "before": [
+                "g",
+                "K"
+            ]
         },
         {
             // Switch to tab left
-            "before": ["g","h"],
-            "commands": [":tabp"]
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                ":tabp"
+            ]
         },
         {
             // Switch to tab right
-            "before": ["g","l"],
-            "commands": [":tabn"]
+            "before": [
+                "g",
+                "l"
+            ],
+            "commands": [
+                ":tabn"
+            ]
         },
         {
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ],
             // Change "delete (cut)" to true delete
-            "before":["d"],
-            "after":["\"", "_","d"]
+            "before": [
+                "d"
+            ]
         }
     ],
     "vim.surround": true,
     "vim.visualModeKeyBindingsNonRecursive": [
         {
+            "after": [
+                "3",
+                "<C-y>"
+            ],
             // Ctrl-y increased distance
-            "before":["<C-y>"],
-            "after":["3","<C-y>"]
+            "before": [
+                "<C-y>"
+            ]
         },
         {
+            "after": [
+                "3",
+                "<C-e>"
+            ],
             // Ctrl-e increased distance
-            "before":["<C-e>"],
-            "after":["3","<C-e>"]
+            "before": [
+                "<C-e>"
+            ]
         },
         {
             // Copy current line down
-            "before": ["<leader>", "d"],
-            "commands":["editor.action.copyLinesDownAction"]
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "commands": [
+                "editor.action.copyLinesDownAction"
+            ]
         },
         {
             // Copy current line up
-            "before": ["<leader>", "u"],
-            "commands":["editor.action.copyLinesUpAction"]
+            "before": [
+                "<leader>",
+                "u"
+            ],
+            "commands": [
+                "editor.action.copyLinesUpAction"
+            ]
         },
         {
             // Move current line down
-            "before": ["<leader>", "D"],
-            "commands":["editor.action.moveLinesDownAction"]
+            "before": [
+                "<leader>",
+                "D"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
         },
         {
             // Move current line up
-            "before": ["<leader>", "U"],
-            "commands":["editor.action.moveLinesUpAction"]
+            "before": [
+                "<leader>",
+                "U"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
         },
         {
-            "before": ["<leader>", "<C-c>"],
-            "commands": ["editor.action.clipboardCopyAction"]
+            "before": [
+                "<leader>",
+                "<C-c>"
+            ],
+            "commands": [
+                "editor.action.clipboardCopyAction"
+            ]
         },
         {
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ],
             // Change "delete (cut)" to true delete
-            "before":["d"],
-            "after":["\"", "_","d"]
+            "before": [
+                "d"
+            ]
         }
     ],
-    
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
-    "workbench.startupEditor": "none",
-    "workbench.settings.editor": "json",
+    "workbench.colorTheme": "Ayu Dark Bordered",
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.wrapTabs": true,
-    "extensions.ignoreRecommendations": false,
-    "python.languageServer": "Pylance",
-    "FSharp.suggestGitignore": false,
-    "FSharp.suggestSdkScripts": false,
-    "FSharp.showExplorerOnStartup": false,
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": false,
-    "workbench.colorTheme": "Ayu Mirage Bordered",
-    "python.showStartPage": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "none",
+    "maui.configuration.androidSdkPreferredPath": "/home/erik/Android/Sdk",
+    "joplin.baseUrl": "http://localhost:41184",
+    "joplin.token": "bc052768e2f00c495c66a0ca8a497d00437465ceaf896774cb3f8b4c5003b0ac38123098e6bc8341ca01f1677856d39f676efeeaf679c773e01fa60d62b835b6",
+    "files.associations": {
+        "*.xaml": "xml"
     },
-    "security.workspace.trust.untrustedFiles": "open",
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "git.openRepositoryInParentFolders": "never",
+    "git.pruneOnFetch": true,
+    "[scminput]": {
+        "editor.rulers": [50, 72],
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 72,
+    },
+    "workbench.iconTheme": "material-icon-theme"
 }
