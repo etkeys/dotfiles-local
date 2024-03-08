@@ -18,3 +18,9 @@ if [ -d "$HOME/repos/scripts" ] ; then
     PATH="$HOME/repos/scripts:$PATH"
 fi
 
+if [ -d "$HOME/bin/dotnet" ] ; then
+    export DOTNET_ROOT=$HOME/bin/dotnet
+    PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+fi
+
+export JAVA_HOME="/usr/local/share/jdk-11.0.21+9"
