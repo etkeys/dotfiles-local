@@ -13,9 +13,6 @@
 - sudo:
   - shell:
     -
-      description: Add repo for steam
-      command: yes | add-apt-repository multiverse
-    -
       description: Add repo for quickemu
       command: yes | apt-add-repository ppa:flexiondotorg/quickemu
     -
