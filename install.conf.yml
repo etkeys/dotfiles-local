@@ -13,12 +13,6 @@
 - sudo:
   - shell:
     -
-      description: Add Microsoft .NET Core package signing key
-      command: >
-          cd /tmp &&
-          wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release --short --release)/packages-microsoft-prod.deb" &&
-          dpkg -i packages-microsoft-prod.deb
-    -
       description: Add repo for steam
       command: yes | add-apt-repository multiverse
     -
