@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=joplin-desktop
+Hidden=false
+Name[en_US]=Joplin
+Name=Joplin
+Comment[en_US]=Run Joplin to activate webserver
+Comment=Run Joplin to activate webserver
+X-MATE-Autostart-Delay=60
