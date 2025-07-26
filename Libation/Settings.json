@@ -1,0 +1,169 @@
+{
+  "Books": "/home/erik/Libation/Books",
+  "ThemeVariant": "Dark",
+  "Serilog": {
+    "MinimumLevel": "Information",
+    "WriteTo": [
+      {
+        "Name": "ZipFile",
+        "Args": {
+          "path": "/home/erik/Libation/_Log.log",
+          "rollingInterval": "Month",
+          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] (at {Caller}) {Message:lj}{NewLine}{Exception} {Properties:j}"
+        }
+      }
+    ],
+    "Using": [
+      "Dinah.Core",
+      "Serilog.Exceptions"
+    ],
+    "Enrich": [
+      "WithCaller",
+      "WithExceptionDetails"
+    ]
+  },
+  "MessageBoxWindow": {
+    "X": 4614,
+    "Y": 431,
+    "Height": 110,
+    "Width": 150,
+    "IsMaximized": false
+  },
+  "FirstLaunch": false,
+  "AccountsDialog": {
+    "X": 4289,
+    "Y": 261,
+    "Height": 450,
+    "Width": 800,
+    "IsMaximized": false
+  },
+  "SettingsDialog": {
+    "X": 2432,
+    "Y": 149,
+    "Height": 750,
+    "Width": 900,
+    "IsMaximized": false
+  },
+  "MainWindow": {
+    "X": 2196,
+    "Y": 122,
+    "Height": 739,
+    "Width": 1440,
+    "IsMaximized": false
+  },
+  "CreateCueSheet": false,
+  "SeriesViewDialog": {
+    "X": 2164,
+    "Y": 166,
+    "Height": 739,
+    "Width": 1440,
+    "IsMaximized": false
+  },
+  "QueueOpen": true,
+  "UpgradeNotificationDialog": {
+    "X": 841,
+    "Y": 211,
+    "Height": 450,
+    "Width": 550,
+    "IsMaximized": false
+  },
+  "EditTemplateDialog": {
+    "X": 2482,
+    "Y": 313,
+    "Height": 450,
+    "Width": 800,
+    "IsMaximized": false
+  },
+  "FolderTemplate": "<title short>",
+  "FileTemplate": "<title>",
+  "ChapterFileTemplate": "<ch# 0> - <ch title>",
+  "SplitFilesByChapter": true,
+  "ChapterTitleTemplate": "<title short>: <ch#> - <ch title>",
+  "DecryptToLossy": true,
+  "GridColumnsVisibilities": {
+    "SeriesOrder": false,
+    "LastDownload": false,
+    "Liberate": true,
+    "Cover": true,
+    "Title": true,
+    "Authors": true,
+    "Narrators": true,
+    "Length": true,
+    "Series": true,
+    "Description": true,
+    "Category": true,
+    "ProductRating": true,
+    "PurchaseDate": true,
+    "MyRating": true,
+    "Misc": true,
+    "BookTags": true
+  },
+  "EditReplacementChars": {
+    "X": 2632,
+    "Y": 313,
+    "Height": 450,
+    "Width": 500,
+    "IsMaximized": false
+  },
+  "ReplacementCharacters": {
+    "Replacement": [
+      {
+        "CharacterToReplace": "\u0000",
+        "ReplacementString": "_",
+        "Description": "All other invalid characters"
+      },
+      {
+        "CharacterToReplace": "/",
+        "ReplacementString": "or",
+        "Description": "Forward Slash (Filename Only)"
+      },
+      {
+        "CharacterToReplace": "\\",
+        "ReplacementString": "or",
+        "Description": "Back Slash (Filename Only)"
+      },
+      {
+        "CharacterToReplace": "\"",
+        "ReplacementString": "quote ",
+        "Description": "Open Quote"
+      },
+      {
+        "CharacterToReplace": "\"",
+        "ReplacementString": " end quote",
+        "Description": "Close Quote"
+      },
+      {
+        "CharacterToReplace": "\"",
+        "ReplacementString": "quote ",
+        "Description": "Other Quote"
+      },
+      {
+        "CharacterToReplace": ":",
+        "ReplacementString": " - ",
+        "Description": "Colon"
+      },
+      {
+        "CharacterToReplace": ";",
+        "ReplacementString": " - ",
+        "Description": "Semi-Colon"
+      },
+      {
+        "CharacterToReplace": "&",
+        "ReplacementString": "and",
+        "Description": "Ampersand"
+      },
+      {
+        "CharacterToReplace": "?",
+        "ReplacementString": "",
+        "Description": ""
+      }
+    ]
+  },
+  "EditQuickFilters": {
+    "X": 4259,
+    "Y": 316,
+    "Height": 450,
+    "Width": 800,
+    "IsMaximized": false
+  }
+}
