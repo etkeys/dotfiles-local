@@ -35,6 +35,8 @@
           - home/.gitignore
     ~/.config/autostart: config/autostart
     ~/.config/Code: config/Code
+    ~/.config/ghb/preferences.json: config/ghb/preferences.json
+    ~/.config/gbh/presets.json: config/ghb/presets.json
     ~/.config/redshift.conf: config/redshift.conf
     ~/.config/monitors.aranar.sh: config/monitors.aranar.sh
 
