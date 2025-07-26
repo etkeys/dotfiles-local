@@ -1,6 +1,6 @@
 {
     "accessibility.dimUnfocused.enabled": true,
-    "accessibility.dimUnfocused.opacity": 0.4,
+    "accessibility.dimUnfocused.opacity": 0.6,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.copyWithSyntaxHighlighting": false,
@@ -16,11 +16,12 @@
     "editor.renderWhitespace": "all",
     "editor.rulers": [
         80,
-        120
+        115
     ],
     "editor.suggest.insertMode": "insert",
     "editor.suggest.showStatusBar": true,
     "editor.tabSize": 4,
+    "editor.wordWrap": "off",
     "extensions.ignoreRecommendations": false,
     "files.exclude": {
         "**/.DS_Store": true,
@@ -39,7 +40,7 @@
     "python.languageServer": "Pylance",
     "python.terminal.activateEnvironment": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.profiles.linux": {
         "bash": {
@@ -316,10 +317,8 @@
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.wrapTabs": true,
     "workbench.settings.editor": "json",
-    "workbench.startupEditor": "none",
-    "maui.configuration.androidSdkPreferredPath": "/home/erik/Android/Sdk",
-    "joplin.baseUrl": "http://localhost:41184",
-    "joplin.token": "bc052768e2f00c495c66a0ca8a497d00437465ceaf896774cb3f8b4c5003b0ac38123098e6bc8341ca01f1677856d39f676efeeaf679c773e01fa60d62b835b6",
+    "workbench.startupEditor": "newUntitledFile",
+    "maui.configuration.androidSdkPreferredPath": "/home/erik/.local/bin/android-studio/android-sdk",
     "files.associations": {
         "*.xaml": "xml"
     },
@@ -332,5 +331,30 @@
         "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 72,
     },
-    "workbench.iconTheme": "material-icon-theme"
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "[github-actions-workflow]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "[xml]": {
+        "editor.rulers": [45]
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "maui.configuration.javaSdkPreferredPath": "/usr/lib/jvm/msopenjdk-17-amd64",
+    "csharp.preview.improvedLaunchExperience": true,
+    "terminal.integrated.suggest.enabled": true,
+
+    // There is a bug in kde QT5 that causes KDialog to infinite loop.
+    // The workaround is to use simpleDialog instead until a fix is released.
+    // This bug is not present in QT6.
+    // https://stackoverflow.com/a/79089643
+    "files.simpleDialog.enable": true
 }
