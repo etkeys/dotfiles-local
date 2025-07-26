@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=/home/erik/repos/scripts/run-after-delay.sh 12 signal-desktop
+GenericName[en_US]=
+GenericName=
+Hidden=false
+MimeType=
+Name[en_US]=Signal
+Name=Signal
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-Autostart-Delay=15
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-MATE-Autostart-Delay=15

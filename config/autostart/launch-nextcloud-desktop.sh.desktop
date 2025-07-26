@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=Updates nextcloud desktop app image and launches it.
+Comment=Updates nextcloud desktop app image and launches it.
+Exec=/home/erik/.local/bin/scripts/run-after-delay.sh 20 /home/erik/.local/bin/scripts/launch-nextcloud-desktop.sh
+GenericName[en_US]=
+GenericName=
+Hidden=false
+MimeType=
+Name[en_US]=Nextcloud Client
+Name=Nextcloud Client
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-Autostart-Delay=60
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-MATE-Autostart-Delay=60

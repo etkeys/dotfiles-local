@@ -1,9 +1,19 @@
 [Desktop Entry]
-Type=Application
-Exec=firefox-init
-Hidden=false
-Name[en_US]=firefox
-Name=Initial firefox
 Comment[en_US]=Starts firefox with important tabs
 Comment=Starts firefox with important tabs
+Exec=/home/erik/.local/bin/scripts/run-after-delay.sh 5 /home/erik/.local/bin/scripts/firefox-init
+GenericName[en_US]=
+GenericName=
+Hidden=false
+MimeType=
+Name[en_US]=firefox
+Name=firefox
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-Autostart-Delay=5
+X-KDE-SubstituteUID=false
+X-KDE-Username=
 X-MATE-Autostart-Delay=5

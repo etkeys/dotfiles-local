@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=/home/erik/.local/bin/scripts/run-after-delay.sh 10 discord
+GenericName[en_US]=
+GenericName=
+Hidden=false
+MimeType=
+Name[en_US]=Discord
+Name=Discord
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-Autostart-Delay=10
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-MATE-Autostart-Delay=10

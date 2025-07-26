@@ -1,9 +1,18 @@
 [Desktop Entry]
-Type=Application
-Exec=thunderbird
-Hidden=false
-Name[en_US]=Thunderbird
-Name=Thunderbird
 Comment[en_US]=Email and calendar
 Comment=Email and calendar
+Exec=/home/erik/.local/bin/scripts/run-after-delay.sh 3 thunderbird
+GenericName[en_US]=
+GenericName=
+Hidden=false
+MimeType=
+Name[en_US]=Thunderbird
+Name=Thunderbird
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
 X-MATE-Autostart-Delay=0
