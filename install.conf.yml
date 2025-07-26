@@ -37,6 +37,7 @@
     ~/.config/Code: config/Code
     ~/.config/ghb/preferences.json: config/ghb/preferences.json
     ~/.config/gbh/presets.json: config/ghb/presets.json
+    ~/.local/share/konsole: kde/konsole
     ~/.config/redshift.conf: config/redshift.conf
     ~/.config/monitors.aranar.sh: config/monitors.aranar.sh
 
