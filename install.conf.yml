@@ -40,6 +40,8 @@
     ~/.config/gbh/presets.json: config/ghb/presets.json
     ~/.config/redshift.conf: config/redshift.conf
     ~/.config/monitors.aranar.sh: config/monitors.aranar.sh
+    ~/.config/kwinrc: config/kwinrc
+    ~/.config/kwinrulesrc: config/kwinrulesrc
     ~/.config/plasma-org.kde.plasma.desktop-appletsrc: config/plasma-org.kde.plasma.desktop-appletsrc
     ~/.local/share/konsole: kde/konsole
     ~/Libation/Settings.json: Libation/Settings.json

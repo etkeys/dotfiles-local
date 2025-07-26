@@ -1,0 +1,38 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1]
+Description=Open Thunderbird on left monitor
+screen=1
+screenrule=3
+types=1
+wmclass=thunderbird-esr
+wmclassmatch=1
+
+[2]
+Description=Open Discord on monitor 3
+screen=2
+screenrule=2
+types=1
+wmclass=discord
+wmclassmatch=1
+
+[98fdab2f-e8e1-4601-9878-8279eff78371]
+Description=Open Discord on monitor 3
+screen=2
+screenrule=3
+types=1
+wmclass=discord
+wmclassmatch=1
+
+[General]
+count=2
+rules=1,2
+
+[af86016d-3fe4-443a-9bb4-5506b18e870c]
+Description=Open Thunderbird on Screen 1
+screenrule=3
+types=1
+wmclass=thunderbird-bin
+wmclasscomplete=true
+wmclassmatch=1
