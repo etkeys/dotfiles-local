@@ -1,5 +1,6 @@
 apt-file/noble,now 3.3 all [installed]
 apt-transport-https/noble-updates,now 2.8.3 all [installed]
+ark/noble,now 4:23.08.5-0ubuntu5 amd64 [installed]
 ca-certificates/noble,now 20240203 all [installed]
 curl/noble-updates,noble-security,now 8.5.0-2ubuntu10.6 amd64 [installed]
 dconf-editor/noble,now 45.0.1-1build2 amd64 [installed]
