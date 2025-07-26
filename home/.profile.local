@@ -1,6 +1,9 @@
 
+export ANDROID_HOME="/home/erik/.local/bin/android-studio/android-sdk"
+export ANDROID_AVD_HOME="/home/erik/.config/.android/avd"
+export JAVA_HOME="/usr/lib/jvm/msopenjdk-17-amd64"
+export S3_ENDPOINT="https://s3.us-west-002.backblazeb2.com"
 export VMDIR="/mnt/vmdrive/erik"
-export NEXTCLOUD_S3_ENDPOINT="https://s3.us-west-002.backblazeb2.com"
 
 if [ -n "$DESKTOP_SESSION" ] ; then
     export XDG_CONFIG_HOME="$HOME/.config"
@@ -15,12 +18,11 @@ if [ -n "$DESKTOP_SESSION" ] && [ "$DESKTOP_SESSION" = "i3" ] ; then
 fi
 
 if [ -d "$HOME/repos/scripts" ] ; then
-    PATH="$HOME/repos/scripts:$PATH"
+    PATH="$PATH:$HOME/repos/scripts"
 fi
 
-if [ -d "$HOME/bin/dotnet" ] ; then
-    export DOTNET_ROOT=$HOME/bin/dotnet
+if [ -d "$HOME/.local/bin/dotnet" ] ; then
+    export DOTNET_ROOT=$HOME/.local/bin/dotnet
     PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 fi
 
-export JAVA_HOME="/usr/local/share/jdk-11.0.21+9"

@@ -14,7 +14,7 @@ start_agent() {
 # if [ -n "$DESKTOP_SESSION" ] ; then
 #     terminal-init-info.sh
 # fi
-[ -n "$DESKTOP_SESSION" ] && terminal-init-info.sh
+# [ -n "$DESKTOP_SESSION" ] && terminal-init-info.sh
 
 
 if [ -f "${SSH_ENV}" ]; then
