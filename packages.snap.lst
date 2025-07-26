@@ -1,0 +1,17 @@
+chromium                     138.0.7204.157                  3203   latest/stable    canonical**      -
+code                         c306e94f                        201    latest/stable    vscode**         classic
+discord                      0.0.102                         247    latest/stable    snapcrafters*    -
+firefox                      141.0-2                         6565   latest/stable/…  mozilla**        -
+gtk-common-themes            0.1-81-g442e511                 1535   latest/stable/…  canonical**      -
+htop                         3.4.1                           5092   latest/stable    maxiberta*       -
+joplin-desktop               v3.3.13                         109    latest/stable    james-carroll*   -
+kcalc                        25.04.3                         139    latest/stable    kde**            -
+kclock                       25.04.3                         48     latest/stable    kde**            -
+kcolorchooser                25.04.3                         121    latest/stable    kde**            -
+ksnip                        1.10.1                          488    latest/stable    dporobic         -
+mc-installer                 14.2                            638    latest/stable    kz6fittycent     -
+mqtt-explorer                0.4.0-beta4                     31     latest/stable    thomasnordquist  -
+onlyoffice-desktopeditors    9.0.3                           604    latest/stable    onlyoffice**     -
+signal-desktop               7.63.0                          807    latest/stable    snapcrafters*    -
+thunderbird                  128.12.0esr-1                   751    latest/stable    canonical**      -
+vlc                          3.0.20-1-g2617de71b6            3777   latest/stable    videolan**       -
