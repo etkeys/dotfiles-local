@@ -1,7 +1,7 @@
 
 export ANDROID_HOME="/home/erik/.local/bin/android-studio/android-sdk"
 export ANDROID_AVD_HOME="/home/erik/.config/.android/avd"
-export JAVA_HOME="/usr/lib/jvm/msopenjdk-17-amd64"
+# export JAVA_HOME="/usr/lib/jvm/msopenjdk-17-amd64"
 export S3_ENDPOINT="https://s3.us-west-002.backblazeb2.com"
 export VMDIR="/mnt/vmdrive/erik"
 

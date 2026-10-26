@@ -1,6 +1,6 @@
 {
     "accessibility.dimUnfocused.enabled": true,
-    "accessibility.dimUnfocused.opacity": 0.6,
+    "accessibility.dimUnfocused.opacity": 0.75,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.copyWithSyntaxHighlighting": false,
@@ -8,7 +8,7 @@
     "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "'Ubuntu mono', 'Material Design Icons', 'FontAwesome', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "editor.fontWeight": "normal",
     "editor.lineNumbers": "relative",
     "editor.minimap.maxColumn": 80,
@@ -40,7 +40,7 @@
     "python.languageServer": "Pylance",
     "python.terminal.activateEnvironment": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.profiles.linux": {
         "bash": {
@@ -320,7 +320,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "maui.configuration.androidSdkPreferredPath": "/home/erik/.local/bin/android-studio/android-sdk",
     "files.associations": {
-        "*.xaml": "xml"
+        "*.xaml": "xml",
+        "*.service": "ini",
+        "*.timer": "ini",
     },
     "git.confirmSync": false,
     "git.suggestSmartCommit": false,
@@ -348,7 +350,7 @@
     },
     "workbench.iconTheme": "material-icon-theme",
     "git.autofetch": true,
-    "maui.configuration.javaSdkPreferredPath": "/usr/lib/jvm/msopenjdk-17-amd64",
+    "maui.configuration.javaSdkPreferredPath": "/usr",
     "csharp.preview.improvedLaunchExperience": true,
     "terminal.integrated.suggest.enabled": true,
 
@@ -356,5 +358,15 @@
     // The workaround is to use simpleDialog instead until a fix is released.
     // This bug is not present in QT6.
     // https://stackoverflow.com/a/79089643
-    "files.simpleDialog.enable": true
+    // "files.simpleDialog.enable": true,
+    "inlineChat.defaultModel": "Claude Haiku 4.5 (copilot)",
+    "inlineChat.affordance": "editor",
+    "chat.tools.urls.autoApprove": {
+        "https://code.visualstudio.com": true,
+        "https://github.com/microsoft/vscode/wiki/*": true,
+        "https://api.github.com/repos/nextcloud-releases/desktop/releases": {
+            "approveRequest": false,
+            "approveResponse": true
+        }
+    }
 }

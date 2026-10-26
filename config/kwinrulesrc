@@ -6,14 +6,36 @@ Description=Open Thunderbird on left monitor
 screen=1
 screenrule=3
 types=1
-wmclass=thunderbird-esr
+wmclass=thunderbird_thunderbird
+wmclassmatch=1
+
+[19054cb5-f85e-4fa8-9777-18cef1c98bb8]
+Description=Discord on right monitor
+screen=2
+screenrule=3
+wmclass=discord
+wmclasscomplete=true
 wmclassmatch=1
 
 [2]
-Description=Open Discord on monitor 3
+Description=Discord on right Monitor
 screen=2
 screenrule=2
+wmclass=discord
+wmclassmatch=1
+
+[3]
+Description=Open Firefox on center screen
+screen=1
+screenrule=3
 types=1
+wmclass=firefox_firefox
+wmclassmatch=1
+
+[3f33d9a3-4b9b-4534-901d-c593d4a919f4]
+Description=Discord on right Monitor
+screen=2
+screenrule=2
 wmclass=discord
 wmclassmatch=1
 
@@ -26,8 +48,16 @@ wmclass=discord
 wmclassmatch=1
 
 [General]
-count=2
-rules=1,2
+count=3
+rules=1,2,3
+
+[a56905c0-cc5d-43be-b2ac-a7ecb247dce8]
+Description=Open Firefox on center screen
+screen=1
+screenrule=3
+types=1
+wmclass=firefox_firefox
+wmclassmatch=1
 
 [af86016d-3fe4-443a-9bb4-5506b18e870c]
 Description=Open Thunderbird on Screen 1

@@ -22,6 +22,15 @@ sheetEnabled=true
 [Tiling]
 padding=4
 
+[Tiling][032546b7-daab-544a-bc48-c807c1efc805]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][0af5f27f-ea5a-548d-9f88-2df142a3630b]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][1e1f90c3-5ccb-564e-a615-ac7dfca93f56]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][2858c3fe-5035-5d82-a89f-a628a327d46c]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -34,5 +43,18 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][58ca410b-ce44-58d6-82b9-fefe44aba0e3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][76985875-3c55-5cb9-af11-b41030d9e453]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][7796e50c-1cb9-559f-bde1-520b9a2f3617]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][7f195479-d7a2-5e63-bbce-de6be081ba19]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=kwin4_decoration_qml_plastik

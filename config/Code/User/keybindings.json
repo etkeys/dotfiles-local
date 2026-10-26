@@ -58,5 +58,10 @@
         "key": "f5",
         "command": "mssql.runQuery",
         "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "alt+i",
+        "command": "inlineChat.start",
+        "when": "inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook'"
     }
 ]

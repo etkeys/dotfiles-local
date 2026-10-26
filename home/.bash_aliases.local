@@ -1,6 +1,6 @@
     alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
     alias sqquickemu='quickemu --status-quo'
-    alias rsync='rsync --progress'
+    alias rsync='rsync --progress --times'
 
 # editors
     alias c="code -r" #Execute vscode using a current instance

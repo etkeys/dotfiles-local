@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Anthropic",
+		"vendor": "anthropic",
+		"apiKey": "${input:chat.lm.secret.7beb0330}"
+	},
+	{
+		"name": "OpenAI",
+		"vendor": "openai",
+		"apiKey": "${input:chat.lm.secret.-6e4f120e}"
+	}
+]
